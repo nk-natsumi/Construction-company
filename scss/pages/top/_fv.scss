@@ -1,4 +1,74 @@
-@use '../base/_setting' as *;
+@use '../../base/_setting' as *;
 /************************
-    top
+    fv
 **************************/
+
+.bg-color {
+    height: 727px;
+    width: 727px;
+    background-color: $sab-color;
+    padding: 20px;
+    float: right;
+    position: relative;
+    top: 0;
+}
+
+.fv {
+    position: relative;
+}
+
+.fv__img {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    border-radius: 50px;
+}
+
+.fv__img-sp {
+    display: none;
+
+    @include sp {
+        display: block;
+    }
+}
+
+.fv__text-content {
+    position: absolute;
+    top: 673px;
+    right: calc((153/1160)*100%);
+}
+
+.fv__title {
+    font-size: 64px;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 14px;
+    border-radius: 10px;
+}
+
+.fv__text {
+    font-weight: bold;
+    margin-top: 21px;
+    line-height: 2;
+}
+
+
+.scroll-btn a{
+    position: relative;
+    color: $sab-color;
+    font-size: 10px;
+    font-weight: bold;
+    top: 839px;
+    left: calc((18/1160)*100%);
+
+    &::after {
+        content: "";
+        width: 112px;
+        height: 1px;
+        background-color: $sab-color;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) rotate(90deg);
+        bottom: -64px;
+    }
+}

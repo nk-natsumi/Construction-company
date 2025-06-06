@@ -2,3 +2,130 @@
 /************************
     common
 **************************/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    color: $main-color;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: $main-color;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    margin-left: 280px;
+}
+
+.wrapper {
+    max-width: 1120px;
+    margin: 0 auto 0 0;
+}
+
+.sab-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.title__img {
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+.flex-box {
+    display: flex;
+}
+
+.flex-box-center{
+    display: flex;
+}
+
+.more-btn {
+    a {
+        display: inline-block;
+        box-sizing: border-box;
+        /* ここmax-width: 240px;だとできない　 */
+        max-width: 242px;
+        width: 100%;
+        border: 1px solid $main-color;
+        background-color: #FFF;
+        border-radius: 10px;
+        font-weight: bold;
+        padding: 22px 82px;
+        position: relative;
+
+        &::after {
+            content: "⚫︎";
+            width: 10px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 20px;
+        }
+    }
+}
+
+
+
+
+
+
+/*ローディング*/
+
+.hidden {
+    display: none;
+}
+
+.loading {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 2147483647;
+    display: grid;
+    place-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+    /* 背後のコンテンツにマウスイベントが影響しないようにする */
+
+    img {
+        width: 250px;
+        height: 250px;
+        width: 100%;
+    }
+}
+
+.loading.active {
+    display: grid;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+/* JS が無効なときのスタイル */
+@media (scripting: none) {
+    .loading {
+        display: none;
+    }
+
+    .hidden {
+        display: block;
+    }
+}

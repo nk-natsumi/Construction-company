@@ -2,20 +2,16 @@
     setting
 ***********************/
 
-$main-color: ;
-$sab-color: ;
+$main-color: #000000;
+$sab-color: #4282B8;
+$line-color:#B1C6DC;
+$bg-color:#F8F8F8;
 
 
 // ブレイクポイント
-$pc: 1080px;
-$tab: 820px;
-$sp: 480px;
+$tab: 1080px;
+$sp: 767px;
 
-@mixin pc {
-    @media screen and (max-width: ($pc)) {
-        @content;
-    }
-}
 
 @mixin tab {
     @media screen and (max-width: ($tab)) {

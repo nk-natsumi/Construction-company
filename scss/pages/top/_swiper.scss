@@ -1,0 +1,23 @@
+@use '../../base/_setting' as *;
+/************************
+    swiper
+**************************/
+
+.swiper {
+    max-width: 1160px;
+    width: 100%;
+    margin-top: 989px;
+    background-color: $bg-color;
+}
+
+.swiper-wrapper {
+    margin: 63px 0 63px 48px;
+    transition-timing-function: linear;
+}
+
+/* 画像のサイズ調整 */
+.swiper-slide img {
+    height: auto;
+    max-width: 360px;
+    width: 100%;
+}

@@ -1,0 +1,58 @@
+@use '../../base/_setting' as *;
+/************************
+    about
+**************************/
+
+.about__wrapper{
+    margin-top: 71px;
+
+    .flex-box{
+        gap: 196px;
+        align-items:flex-start
+    }
+}
+
+.about__left{
+    max-width: 429px;
+    width: 100%;
+}
+
+.about__title{
+    max-width: 429px;
+}
+
+.about__text{
+    line-height: 1.8;
+    margin-top: 40px;
+}
+
+.about__btn{
+    margin-top: 40px;
+}
+
+.about__right{
+    gap: 20px !important;
+}
+
+.about__illust{
+    max-width: 221.8px;
+    width: 100%;
+    margin-top:-105px;
+    z-index: 2;
+}
+
+.about__slogan{
+    font-size: 40px;
+    line-height: 1.5;
+    background-color: $bg-color;
+    padding: 16px 40px;
+    writing-mode: vertical-rl;
+    letter-spacing: 20px;
+    margin-top: -303px;
+    z-index: 2;
+    display: inline;
+
+    span{
+        color: $sab-color;
+    }
+}

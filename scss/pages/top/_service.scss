@@ -1,0 +1,97 @@
+@use '../../base/_setting' as *;
+/************************
+    service
+**************************/
+
+.service {
+    margin-top: 85px;
+    position: relative;
+    padding-bottom: 100px;
+
+    .sab-title {
+        margin-top: 49px;
+    }
+
+    .flex-box {
+        gap: calc((367/1120)*100%);
+    }
+}
+
+.service__bg-color {
+    height: 100%;
+    width: 968px;
+    background-color: $bg-color;
+    border-radius: 50px 0 0 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.service__title {
+    max-width: 491px;
+}
+
+.service__illust {
+    max-width: 124px;
+    margin-top: 93px;
+}
+
+.service__img {
+    max-width: 516px;
+    z-index: 2;
+}
+
+
+.service__content {
+    margin-top: 92px;
+}
+
+.service__content-top{
+    margin-top: 20px !important;
+}
+
+
+
+.flex-box-center {
+    gap: 56px;
+}
+
+.service__namber {
+    max-width: 174px;
+    padding: 24px 0;
+}
+
+
+.--01 {
+    margin-left: -77px;
+}
+
+.--02 {
+    margin: 0 0 0 auto;
+    margin-right: -77px;
+}
+
+.service__item {
+    max-width: 430px;
+    width: 100%;
+}
+
+.service__content-title {
+    max-width: 272px;
+    font-size: 24px;
+    background-color: #fff;
+    padding: 10px 16px;
+    font-weight: bold;
+}
+
+.service__text-box{
+    p{
+        margin-top: 48px;
+        line-height: 1.8;
+    }
+
+    .more-btn{
+        margin-top: 28px;
+    }
+}
