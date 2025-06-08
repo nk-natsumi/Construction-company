@@ -2,3 +2,62 @@
 /************************
     footer
 **************************/
+
+.footer {
+    margin-top: 117px;
+
+    .flex-box {
+        gap: calc((109/1160)*100%);
+         }
+}
+
+.footer__logo {
+    /* max-width: calc((222/1160)*100%);
+   */
+    max-width: 222px;
+
+}
+
+.footer__text-box {
+    margin-top: 23px;
+    width: 100%;
+
+    p {
+        margin-top: 16px;
+    }
+
+    span {
+        margin-left: 16px;
+    }
+}
+
+
+.footer__nav {
+    font-weight: bold;
+    margin-top: 25px;
+    max-width: 488px;
+    width: 100%;
+
+    .flex-box-center {
+        gap: calc((24/488)*100%);
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+    }
+
+}
+
+.main-icon {
+    display: flex;
+    gap: 8px;
+
+    img {
+        max-width: 20px;
+    }
+}
+
+
+
+.copyright {
+    margin-top: 7px;
+    text-align: end;
+}

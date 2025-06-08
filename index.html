@@ -44,7 +44,8 @@
                 <nav class="header__nav">
                     <ul class="header__list">
                         <li class="header__item header__link-group">
-                            <a class="header__link-title" href="">私達について</a>
+                            <div class="header__link-title">
+                            <a href="#about">私達について</a></div>
                             <div class="header__sub-menu">
                                 <a class="sab--01">経営理念</a>
                                 <a class="sab--02">会社概要</a>
@@ -52,16 +53,17 @@
                             </div>
                         </li>
                         <li class="header__item header__link-group">
-                            <a class="header__link-title" href="">事業内容</a>
+                            <div class="header__link-title">
+                            <a href="#service">事業内容</a></div>
                             <div class="header__sub-menu">
                                 <a class="sab--01">住宅建築・リフォーム</a>
                                 <a class="sab--02">法人新築・リフォーム</a>
                                 <a class="sab--03">公共工事</a>
                             </div>
                         </li>
-                        <li class="header__item header__item-more"><a href="">お知らせ</a></li>
+                        <li class="header__item header__item-more"><a href="#news">お知らせ</a></li>
                         <li class="header__item header__item-more header__info">
-                            <a href=""><img src="img/mail_icon.svg" alt="メールアイコン">お問い合わせ</a>
+                            <a href="contact/contact.html"><img src="img/mail_icon.svg" alt="メールアイコン">お問い合わせ</a>
                         </li>
                     </ul>
                 </nav>
@@ -117,7 +119,7 @@
                     </div>
                 </section>
 
-                <section class="about">
+                <section id="about">
                     <div class="wrapper about__wrapper">
                         <div class="flex-box">
                             <div class="about__left">
@@ -129,7 +131,7 @@
                                     「丁寧な家造りで、理想を現実に」。これは私たちの約束です。青牡丹工務店が手がける家は、ただの建物ではありません。それは、お客様の暮らしや夢を支える、信頼と品質に満ちた温かな空間です。
                                 </p>
                                 <div class="more-btn about__btn">
-                                    <a href="">Read More</a>
+                                    <a href="about/about.html">Read More</a>
                                 </div>
                             </div>
                             <div class="about__right flex-box">
@@ -144,7 +146,7 @@
                     </div>
                 </section>
 
-                <section class="service">
+                <section id="service">
                     <div class="service__bg-color"></div>
                     <div class="wrapper service__wrapper">
                         <div class="flex-box">
@@ -175,7 +177,7 @@
                                     <p>注文住宅では、お客様のニーズや希望に合わせて、オーダーメイドの家を提供します。私たちは、建物の設計から完成までのプロセスで、お客様と緊密に連携し、理想の暮らしを実現するための最適な解決策を提案します。
                                     </p>
                                     <div class="more-btn about__btn">
-                                        <a href="">Read More</a>
+                                        <a href="service/service.html#residentialーarchitecture">Read More</a>
                                     </div>
                                 </div>
                             </li>
@@ -192,7 +194,7 @@
                                     <p>法人新築では、商業施設やオフィスビル、工場など、さまざまなニーズに応じた建物の新築を手がけています。お客様のビジネスの要件やイメージに合わせて、効率的で機能的な建物を設計・施工します。
                                     </p>
                                     <div class="more-btn about__btn">
-                                        <a href="">Read More</a>
+                                        <a href="service/service.html#corporate-new-construction">Read More</a>
                                     </div>
                                 </div>
                             </li>
@@ -215,7 +217,7 @@
                                     <p>公共工事では、道路や橋梁、公共施設など、地域社会に欠かせないインフラや施設の建設・改修を行います。私たちは、公共の福祉と安全を考慮しながら、厳格な規制や基準に適合した施工を行います。
                                     </p>
                                     <div class="more-btn about__btn">
-                                        <a href="">Read More</a>
+                                        <a href="service/service.html#public works">Read More</a>
                                     </div>
                                 </div>
                             </li>
@@ -223,7 +225,7 @@
                     </div>
                 </section>
 
-                <section class="news">
+                <section id="news">
                     <div class="wrapper news__wrapper">
                         <div class="news__title-box">
                             <p class="sab-title">事業内容</p>
@@ -232,8 +234,8 @@
                             </h2>
                         </div>
                         <ul class="news__content">
-                            <li class="news__item">
-                                <a href="news__link" data-micromodal-trigger="modal-1">
+                            <li class="news__item news__item-top">
+                                <a class="news__link" href="#modal-1" data-micromodal-trigger="modal-1">
                                     <div class="flex-box">
                                         <h3 class="news__category">イベント情報</h3>
                                         <time class="news__time" datetime="">2024.06.03</time>
@@ -244,7 +246,7 @@
                                 </a>
                             </li>
                             <li class="news__item">
-                                <a href="news__link" data-micromodal-trigger="modal-2">
+                                <a class="news__link" href="#modal-2" data-micromodal-trigger="modal-2">
                                     <div class="flex-box">
                                         <h3 class="news__category">イベント情報</h3>
                                         <time class="news__time" datetime="">2024.05.23</time>
@@ -255,7 +257,7 @@
                                 </a>
                             </li>
                             <li class="news__item">
-                                <a href="news__link" data-micromodal-trigger="modal-3">
+                                <a class="news__link" href="#modal-3" data-micromodal-trigger="modal-3">
                                     <div class="flex-box">
                                         <h3 class="news__category">更新情報</h3>
                                         <time class="news__time" datetime="">2024.05.01</time>
@@ -267,96 +269,101 @@
                             </li>
                         </ul>
                     </div>
-                    <div id="modal-1" aria-hidden="true">
-                        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-                            <div class="modal__container" role="dialog" aria-modal="true"
-                                aria-labelledby="modal-1-title">
-                                <div class="flex-box">
-                                    <h3 class="news__category">イベント情報</h3>
-                                    <time class="news__time" datetime="">2024.06.03</time>
+                    <div class="modal__wrapper ">
+
+                        <div id="modal-1" aria-hidden="true">
+                            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                                <div class="modal__container" role="dialog" aria-modal="true"
+                                    aria-labelledby="modal-1-title">
+                                    <div class="flex-box">
+                                        <h3 class="news__category">イベント情報</h3>
+                                        <time class="news__time" datetime="">2024.06.03</time>
+                                    </div>
+                                    <h4 class="modal__title">住宅設計相談会を実施します。弊社建築士と将来の家造りを真剣に考えませんか？</h4>
+                                    <div class="modal__img">
+                                        <img src="img/news01 1.jpg" alt="">
+                                    </div>
+                                    <div class="modal__text">
+                                        <p>みなさま、こんにちは！弊社では、住宅設計相談会を開催することになりました！将来の家造りを真剣に考える皆様、ぜひご参加ください。</p>
+                                        <p>家を建てるというのは、人生の中で最も重要なイベントの一つです。そのためには、慎重な計画と適切なアドバイスが欠かせません。そこで、弊社の建築士が皆様のお悩みやご要望をお聞きし、最適な家づくりの提案をさせていただきます。
+                                        </p>
+                                        <p>住宅設計相談会では、以下のようなことについてご相談いただけます：</p>
+                                        <ul class="modal__list">
+                                            <li>理想の間取りやデザインについて</li>
+                                            <li>予算や資金計画の相談</li>
+                                            <li>土地選びや法的手続きについてのアドバイス</li>
+                                            <li>新しい住宅技術や省エネルギーの取り入れ方について</li>
+                                        </ul>
+                                        <p>また、相談会に参加いただいた方には、特別なサービスやプレゼントもご用意しています。家造りに関するご質問や疑問点がある方は、ぜひこの機会にお気軽にご参加ください。
+                                        </p>
+                                        <p>弊社の建築士が、皆様のご要望にお応えし、一緒に理想の家づくりを実現するお手伝いをさせていただきます。ぜひお越しください！</p>
+                                    </div>
+                                    <button class="modal__close more-btn" aria-label="Close modal"
+                                        data-micromodal-close>閉じる</button>
                                 </div>
-                                <h4>住宅設計相談会を実施します。弊社建築士と将来の家造りを真剣に考えませんか？</h4>
-                                <div class="modal__img">
-                                    <img src="img/news01 1.jpg" alt="">
-                                </div>
-                                <div class="modal__text">
-                                    <p>みなさま、こんにちは！弊社では、住宅設計相談会を開催することになりました！将来の家造りを真剣に考える皆様、ぜひご参加ください。</p>
-                                    <p>家を建てるというのは、人生の中で最も重要なイベントの一つです。そのためには、慎重な計画と適切なアドバイスが欠かせません。そこで、弊社の建築士が皆様のお悩みやご要望をお聞きし、最適な家づくりの提案をさせていただきます。
-                                    </p>
-                                    <p>住宅設計相談会では、以下のようなことについてご相談いただけます：</p>
-                                    <ul class="modal__list">
-                                        <li>理想の間取りやデザインについて</li>
-                                        <li>予算や資金計画の相談</li>
-                                        <li>土地選びや法的手続きについてのアドバイス</li>
-                                        <li>新しい住宅技術や省エネルギーの取り入れ方について</li>
-                                    </ul>
-                                    <p>また、相談会に参加いただいた方には、特別なサービスやプレゼントもご用意しています。家造りに関するご質問や疑問点がある方は、ぜひこの機会にお気軽にご参加ください。
-                                    </p>
-                                    <p>弊社の建築士が、皆様のご要望にお応えし、一緒に理想の家づくりを実現するお手伝いをさせていただきます。ぜひお越しください！</p>
-                                </div>
-                                <button class="modal__close" aria-label="Close modal" data-micromodal-close>閉じる</button>
                             </div>
                         </div>
-                    </div>
-                    <div id="modal-2" aria-hidden="true">
-                        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-                            <div class="modal__container" role="dialog" aria-modal="true"
-                                aria-labelledby="modal-2-title">
-                                <div class="flex-box">
-                                    <h3 class="news__category">イベント情報</h3>
-                                    <time class="news__time" datetime="">2024.05.23</time>
+                        <div id="modal-2" aria-hidden="true">
+                            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                                <div class="modal__container" role="dialog" aria-modal="true"
+                                    aria-labelledby="modal-2-title">
+                                    <div class="flex-box">
+                                        <h3 class="news__category">イベント情報</h3>
+                                        <time class="news__time" datetime="">2024.05.23</time>
+                                    </div>
+                                    <h4 class="modal__title">安全管理研修を実施しました！</h4>
+                                    <div class="modal__img">
+                                        <img src="img/news02 1.jpg" alt="">
+                                    </div>
+                                    <div class="modal__text">
+                                        <p>弊社では、従業員の安全意識向上と安全管理の強化を目的として、安全管理研修を実施しました。この研修では、従業員全員が安全な作業環境を確保するための重要性や具体的な対策について学び、より安全な職場づくりに向けた取り組みを行いました。
+                                            研修では、以下の内容を中心に学びました：</p>
+                                        <ul class="modal__list">
+                                            <li>作業中の事故や災害を防ぐための基本的な安全ルールや手順</li>
+                                            <li>安全装置や保護具の正しい使用方法と管理について</li>
+                                            <li>作業現場での危険予知や事故対応のためのトレーニング</li>
+                                            <li></li><!-- これは必要か？ -->
+                                        </ul>
+                                        <p>また、実際の事例やケーススタディを通じて、事故や災害が発生した際の適切な対応方法についても学びました。参加者全員が積極的に議論し、知識を深めることができました。
+                                        </p>
+                                        <p>安全管理研修を通じて、従業員一人ひとりが安全に対する意識を高め、安全な職場環境の実現に向けて一層の努力をすることを確認しました。今後も定期的に研修を実施し、安全管理の徹底を図ってまいります。
+                                        </p>
+                                    </div>
+                                    <button class="modal__close" aria-label="Close modal"
+                                        data-micromodal-close>閉じる</button>
                                 </div>
-                                <h4>安全管理研修を実施しました！</h4>
-                                <div class="modal__img">
-                                    <img src="img/news02 1.jpg" alt="">
-                                </div>
-                                <div class="modal__text">
-                                    <p>弊社では、従業員の安全意識向上と安全管理の強化を目的として、安全管理研修を実施しました。この研修では、従業員全員が安全な作業環境を確保するための重要性や具体的な対策について学び、より安全な職場づくりに向けた取り組みを行いました。
-                                        研修では、以下の内容を中心に学びました：</p>
-                                    <ul class="modal__list">
-                                        <li>作業中の事故や災害を防ぐための基本的な安全ルールや手順</li>
-                                        <li>安全装置や保護具の正しい使用方法と管理について</li>
-                                        <li>作業現場での危険予知や事故対応のためのトレーニング</li>
-                                        <li></li><!-- これは必要か？ -->
-                                    </ul>
-                                    <p>また、実際の事例やケーススタディを通じて、事故や災害が発生した際の適切な対応方法についても学びました。参加者全員が積極的に議論し、知識を深めることができました。
-                                    </p>
-                                    <p>安全管理研修を通じて、従業員一人ひとりが安全に対する意識を高め、安全な職場環境の実現に向けて一層の努力をすることを確認しました。今後も定期的に研修を実施し、安全管理の徹底を図ってまいります。
-                                    </p>
-                                </div>
-                                <button class="modal__close" aria-label="Close modal" data-micromodal-close>閉じる</button>
                             </div>
                         </div>
-                    </div>
-                    <div id="modal-3" aria-hidden="true">
-                        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-                            <div class="modal__container" role="dialog" aria-modal="true"
-                                aria-labelledby="modal-3-title">
-                                <div class="flex-box">
-                                    <h3 class="news__category">更新情報</h3>
-                                    <time class="news__time" datetime="">2024.05.01</time>
+                        <div id="modal-3" aria-hidden="true">
+                            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                                <div class="modal__container" role="dialog" aria-modal="true"
+                                    aria-labelledby="modal-3-title">
+                                    <div class="flex-box">
+                                        <h3 class="news__category">更新情報</h3>
+                                        <time class="news__time" datetime="">2024.05.01</time>
+                                    </div>
+                                    <h4 class="modal__title">ホームページをリニューアルしました！！</h4>
+                                    <div class="modal__img">
+                                        <img src="img/news03 1.jpg" alt="">
+                                    </div>
+                                    <div class="modal__text">
+                                        <p>弊社は、お客様により良いサービスを提供するため、ホームページをリニューアルいたしました。新しいデザインと使いやすさを追求し、お客様が情報をより簡単に見つけられるように工夫しました。
+                                        </p>
+                                        <p>新しいホームページでは、以下のような改善点がございます：</p>
+                                        <ul class="modal__list">
+                                            <li>モダンでスタイリッシュなデザインにより、情報の見やすさと視覚的な魅力を向上</li>
+                                            <li>より直感的で分かりやすいナビゲーションメニューにより、目的の情報へのアクセスがスムーズになりました</li>
+                                            <li>より多くの情報やサービスを掲載し、お客様のニーズに合った情報を提供するようになりました</li>
+                                            <li>モバイルフレンドリーなデザインで、スマートフォンやタブレットからも快適に閲覧できます</li>
+                                            <li></li><!-- これは必要か？ -->
+                                        </ul>
+                                        <p>弊社のホームページは、お客様とのコミュニケーションや情報提供の重要なツールです。より使いやすく、わかりやすいホームページを提供することで、お客様との良好な関係を築いていくことが目標です。
+                                        </p>
+                                        <p>ぜひ、新しいホームページをご覧いただき、お客様のご意見やご要望をお聞かせください。今後もお客様により良いサービスを提供できるよう努めてまいります。</p>
+                                    </div>
+                                    <button class="modal__close more-btn" aria-label="Close modal"
+                                        data-micromodal-close>閉じる</button>
                                 </div>
-                                <h4>ホームページをリニューアルしました！！</h4>
-                                <div class="modal__img">
-                                    <img src="img/news03 1.jpg" alt="">
-                                </div>
-                                <div class="modal__text">
-                                    <p>弊社は、お客様により良いサービスを提供するため、ホームページをリニューアルいたしました。新しいデザインと使いやすさを追求し、お客様が情報をより簡単に見つけられるように工夫しました。
-                                    </p>
-                                    <p>新しいホームページでは、以下のような改善点がございます：</p>
-                                    <ul class="modal__list">
-                                        <li>モダンでスタイリッシュなデザインにより、情報の見やすさと視覚的な魅力を向上</li>
-                                        <li>より直感的で分かりやすいナビゲーションメニューにより、目的の情報へのアクセスがスムーズになりました</li>
-                                        <li>より多くの情報やサービスを掲載し、お客様のニーズに合った情報を提供するようになりました</li>
-                                        <li>モバイルフレンドリーなデザインで、スマートフォンやタブレットからも快適に閲覧できます</li>
-                                        <li></li><!-- これは必要か？ -->
-                                    </ul>
-                                    <p>弊社のホームページは、お客様とのコミュニケーションや情報提供の重要なツールです。より使いやすく、わかりやすいホームページを提供することで、お客様との良好な関係を築いていくことが目標です。
-                                    </p>
-                                    <p>ぜひ、新しいホームページをご覧いただき、お客様のご意見やご要望をお聞かせください。今後もお客様により良いサービスを提供できるよう努めてまいります。</p>
-                                </div>
-                                <button class="modal__close more-btn" aria-label="Close modal"
-                                    data-micromodal-close>閉じる</button>
                             </div>
                         </div>
                     </div>
@@ -372,17 +379,17 @@
                                         <img src="img/CONTACT.png" alt="contact">
                                     </h2>
                                 </div>
-                                <div class="contact__lower flex-box">
+                                <div class="contact__lower flex-box-center">
                                     <div class="contact__tel-text">
-                                        <p>Tel</p>
-                                        <p>お電話</p>
+                                        <p class="contact__big">Tel</p>
+                                        <p class="contact__small">お電話</p>
                                     </div>
                                     <div class="contact__tel-text">
-                                        <a href="tel:000-0000-0000">000-0000-0000</a>
-                                        <p>営業時間10:00~20:00</p>
+                                        <a class="contact__big" href="tel:000-0000-0000">000-0000-0000</a>
+                                        <p class="contact__small">営業時間10:00~20:00</p>
                                     </div>
-                                    <div class="contact__form">
-                                        <a href="">
+                                    <div class="contact__btn more-btn">
+                                        <a href="contact/contact.html">
                                             <img src="img/mail_icon.svg" alt="">
                                             メールフォームはこちら
                                         </a>
@@ -402,8 +409,10 @@
             <footer class="footer">
                 <div class="wrapper footer__wrapper">
                     <div class="flex-box">
-                        <div class="footer__logo">
-                            <a href="#"><img src="img/logo-pc.svg" alt="青牡丹工務店"></a>
+                        <div class="footer__left">
+                            <div class="footer__logo">
+                                <a href="#"><img src="img/logo-pc.svg" alt="青牡丹工務店"></a>
+                            </div>
                             <div class="footer__text-box">
                                 <p class="footer__adress">〒000-0000<span>大阪府大阪市中央区北区南町5-6-7</span></p>
                                 <p class="footer__open-time">営業時間<span>10:00~20:00</span></p>
@@ -411,22 +420,22 @@
                             </div>
                         </div>
                         <nav class="footer__nav">
-                            <li class="footer__item flex-box">
+                            <li class="footer__item flex-box-center">
                                 <a href="">トップページ</a>
                                 <a href="">私たちについて</a>
                                 <a href="">経営理念</a>
                             </li>
-                            <li class="footer__item flex-box">
+                            <li class="footer__item flex-box-center">
                                 <a href="">会社概要</a>
                                 <a href="">安全への取り組み</a>
                                 <a href="">事業内容</a>
                                 <a href="">住宅建築・リフォーム</a>
                             </li>
-                            <li class="footer__item flex-box">
+                            <li class="footer__item flex-box-center">
                                 <a href="">法人新築・リフォーム</a>
                                 <a href="">公共工事</a>
                                 <a href="">お知らせ</a>
-                                <a href=""><img src="img/mail_icon.svg" alt="メールアイコン">お問い合わせ</a>
+                                <a class="main-icon" href="contact/contact.html"><img src="img/mail_icon.svg" alt="メールアイコン">お問い合わせ</a>
                             </li>
                         </nav>
                     </div>
