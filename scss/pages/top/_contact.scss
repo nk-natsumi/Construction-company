@@ -1,0 +1,66 @@
+@use '../../base/_setting' as *;
+/************************
+    contact
+**************************/
+
+.contact {
+    margin-top: 132px;
+    background-color: $bg-color;
+    border-radius: 50px 0 0 50px;
+    padding: 31px 40px 53px 24px;
+
+    .flex-box {
+        gap: 175px;
+    }
+
+}
+
+.contact__title {
+    max-width: 553px;
+}
+
+.contact__lower {
+    margin-top: 39px;
+}
+
+.contact__big {
+    font-size: 32px;
+    font-weight: bold;
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 68px;
+        height: 1px;
+        background-color: $main-color;
+        position: absolute;
+        transform: translateY(-50%) rotate(90deg);
+        right: -60px;
+        top: 50%;
+
+    }
+}
+
+.contact__small {
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.contact__illust {
+    max-width: 175px;
+}
+
+.contact__btn {
+    a{
+        display: flex;
+        gap: 8px;
+    padding: 22px 40px;
+    border: solid 1px #fff;
+    max-width: 286px;
+    width: 100%;
+
+    img {
+        max-width: 20px;
+    }
+}
+}
