@@ -1,0 +1,96 @@
+@use '../../base/_setting' as *;
+
+.section__title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#management-philosophy {
+    margin-top: 80px;
+}
+
+.management__img {
+    margin-top: 64px;
+    max-width: 923px;
+    width: 100%;
+}
+
+#corporate-profile {
+    margin-top: 51px;
+
+    .flex-box {
+        justify-content: space-between;
+        margin-top: 64px;
+    }
+}
+
+.corporate__text {
+    line-height: 1.8;
+    max-width: 465px;
+    width: 100%;
+}
+
+.corporate__img-box {
+    max-width: 331px;
+    width: 100%;
+}
+
+.post {
+    margin-top: 16px;
+}
+
+.name {
+    font-size: 32px;
+    color: $sab-color;
+    font-weight: bold;
+}
+
+.corporate-profile__box {
+    margin-top: 82px;
+
+    .flex-box-center {
+        border-bottom: 1px solid $line-color;
+        padding: 30px 0;
+        gap: calc((162/953)*100%);
+        align-items: center;
+    }
+}
+
+.corporate__title {
+    max-width: 80px;
+    width: 100%;
+    font-weight: bold;
+}
+
+#safety-initiatives{
+    margin-top: 56px;
+
+}
+
+.safety__content{
+    margin-top: 56px;
+
+    .flex-box{
+        margin-top: 31px;
+        gap: calc((44/953)*100%);
+    }
+}
+
+
+.safety__title{
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.8;
+}
+
+.safety__text{
+    max-width: 642px;
+    width: 100%;
+    line-height: 1.8;
+}
+
+.safety__img{
+    max-width: 267px;
+    width: 100%;
+}

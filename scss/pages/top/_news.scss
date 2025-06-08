@@ -3,7 +3,7 @@
     news
 **************************/
 
-.news {
+#news {
     margin-top: 107px;
 }
 
@@ -83,13 +83,13 @@
 #modal-1,
 #modal-2,
 #modal-3 {
-    opacity: 0;
+   display: none;
 }
 
 #modal-1.is-open,
 #modal-2.is-open,
 #modal-3.is-open {
-    opacity: 1;
+    display: block;
 }
 
 .modal__overlay {

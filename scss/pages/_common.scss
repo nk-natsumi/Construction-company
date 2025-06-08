@@ -81,10 +81,6 @@ li {
 }
 
 
-/*  */
-
-
-
 /*ローディング*/
 
 .hidden {
@@ -122,10 +118,85 @@ li {
 /* JS が無効なときのスタイル */
 @media (scripting: none) {
     .loading {
-        opacity: 0;;
+        opacity: 0;
+        ;
     }
 
     .hidden {
         display: block;
     }
+}
+
+
+/* 下層ページ共通 */
+
+.section__wrapper{
+     max-width: 953px;
+        width: 100%;
+
+}
+
+.section__top {
+    padding-top: 765px;
+    .flex-box {
+        gap: calc((116/953)*100%);
+        margin-top: 64px;
+    }
+}
+
+.section__main-title {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.section__text {
+    line-height: 1.8;
+    margin-top: 64px;
+    max-width: 422px;
+    width: 100%;
+}
+
+.section__illust{
+    max-width: 165px;
+    width: 100%;
+}
+
+.page__nav {
+    display: flex;
+    gap: calc((24/953)*100%);
+    margin-top: 64px;
+
+    li{
+        max-width: 208px;
+        width: 100%;
+    }
+
+    
+    a {
+        display: inline-block;
+        border: solid $sab-color 1px;
+        border-radius: 10px;
+       width: 100%;
+        padding-top: 11px;
+        padding-bottom: 34px;
+        text-align: center;
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 5px;
+            height: 5px;
+            border: 0;
+            border-top: solid 2px $sab-color;
+            ;
+            border-right: solid 2px $sab-color;
+            ;
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%) rotate(135deg);
+            margin: auto;
+        }
+    }
+
 }

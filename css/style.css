@@ -189,7 +189,6 @@ li {
   right: 20px;
 }
 
-/*  */
 /*ローディング*/
 .hidden {
   opacity: 0;
@@ -231,6 +230,70 @@ li {
     display: block;
   }
 }
+/* 下層ページ共通 */
+.section__wrapper {
+  max-width: 953px;
+  width: 100%;
+}
+
+.section__top {
+  padding-top: 765px;
+}
+.section__top .flex-box {
+  gap: 12.1720881427%;
+  margin-top: 64px;
+}
+
+.section__main-title {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.section__text {
+  line-height: 1.8;
+  margin-top: 64px;
+  max-width: 422px;
+  width: 100%;
+}
+
+.section__illust {
+  max-width: 165px;
+  width: 100%;
+}
+
+.page__nav {
+  display: flex;
+  gap: 2.518363064%;
+  margin-top: 64px;
+}
+.page__nav li {
+  max-width: 208px;
+  width: 100%;
+}
+.page__nav a {
+  display: inline-block;
+  border: solid #4282B8 1px;
+  border-radius: 10px;
+  width: 100%;
+  padding-top: 11px;
+  padding-bottom: 34px;
+  text-align: center;
+  position: relative;
+}
+.page__nav a::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border: 0;
+  border-top: solid 2px #4282B8;
+  border-right: solid 2px #4282B8;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%) rotate(135deg);
+  margin: auto;
+}
+
 /************************
     header
 **************************/
@@ -580,15 +643,15 @@ li {
 /************************
     service
 **************************/
-.service {
+#service {
   margin-top: 85px;
   position: relative;
   padding-bottom: 100px;
 }
-.service .sab-title {
+#service .sab-title {
   margin-top: 49px;
 }
-.service .flex-box {
+#service .flex-box {
   gap: 32.7678571429%;
 }
 
@@ -667,7 +730,7 @@ li {
 /************************
     news
 **************************/
-.news {
+#news {
   margin-top: 107px;
 }
 
@@ -736,13 +799,13 @@ li {
 #modal-1,
 #modal-2,
 #modal-3 {
-  opacity: 0;
+  display: none;
 }
 
 #modal-1.is-open,
 #modal-2.is-open,
 #modal-3.is-open {
-  opacity: 1;
+  display: block;
 }
 
 .modal__overlay {
@@ -863,13 +926,13 @@ li {
 /************************
     contact
 **************************/
-.contact {
+#contact {
   margin-top: 132px;
   background-color: #F8F8F8;
   border-radius: 50px 0 0 50px;
   padding: 31px 40px 53px 24px;
 }
-.contact .flex-box {
+#contact .flex-box {
   gap: 175px;
 }
 
