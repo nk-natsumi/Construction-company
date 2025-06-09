@@ -1,1 +1,75 @@
-/*# sourceMappingURL=service.css.map */
+/**********************
+    setting
+***********************/
+/*****************
+    service
+*******************/
+#residential-architecture {
+  padding-top: 3px;
+}
+
+.works {
+  margin-top: 72px;
+}
+
+.works__inner {
+  max-width: 860px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.works__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 56px;
+  padding-bottom: 39px;
+  border-bottom: solid 1px #B1C6DC;
+}
+
+.works__text-box {
+  margin-top: 20px;
+  line-height: 1.8;
+  gap: 4.6511627907%;
+  align-items: stretch;
+  min-height: 311px;
+}
+
+.works__text-left,
+.works__text-right {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.works__text-left {
+  font-size: 20px;
+  font-weight: bold;
+  width: 43.488372093%;
+}
+
+.works__text-right {
+  width: 51.8604651163%;
+}
+
+.case-study {
+  gap: 7.2093023256%;
+}
+
+.case-study__title {
+  font-weight: bold;
+}
+
+.case-study__img {
+  margin-top: 20px;
+  max-width: 352px;
+}
+
+.case-study__text {
+  margin-top: 20px;
+  font-weight: 14px;
+}
+
+#contact {
+  margin-top: 72px;
+}/*# sourceMappingURL=service.css.map */

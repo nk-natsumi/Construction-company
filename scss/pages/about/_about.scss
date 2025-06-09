@@ -1,5 +1,9 @@
 @use '../../base/_setting' as *;
 
+/*****************
+    about
+*******************/
+
 .section__title {
     font-size: 32px;
     font-weight: bold;
@@ -93,4 +97,8 @@
 .safety__img{
     max-width: 267px;
     width: 100%;
+}
+
+#contact{
+    margin-top: 193px;
 }

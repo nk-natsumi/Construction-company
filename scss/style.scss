@@ -3,11 +3,12 @@
 
 @use './pages/_common';
 @use './pages/_header';
-@use './pages/top/fv';
-@use './pages/top/about';
-@use './pages/top/swiper';
-@use './pages/top/service';
-@use './pages/top/news';
-@use './pages/top/contact';
+@use './pages/top/top-fv';
+@use './pages/top/top-about';
+@use './pages/top/top-swiper';
+@use './pages/top/top-service';
+@use './pages/top/top-news';
+@use './pages/top/top-contact';
 
 @use './pages/_footer';
+

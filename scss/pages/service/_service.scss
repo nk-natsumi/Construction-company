@@ -1,2 +1,75 @@
+@use '../../base/_setting' as *;
 
+/*****************
+    service
+*******************/
 
+#residential-architecture {
+    padding-top: 3px;
+}
+
+.works {
+    margin-top: 72px;
+}
+
+.works__inner {
+    max-width: 860px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.works__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 56px;
+    padding-bottom: 39px;
+    border-bottom: solid 1px $line-color;
+}
+
+.works__text-box {
+    margin-top: 20px;
+    line-height: 1.8;
+    gap: calc((40/860)*100%);
+    align-items: stretch;
+    min-height: 311px;
+}
+
+.works__text-left,
+.works__text-right {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.works__text-left {
+    font-size: 20px;
+    font-weight: bold;
+    width: calc((374/860)*100%);
+}
+
+.works__text-right {
+    width: calc((446/860)*100%);
+}
+
+.case-study{
+    gap: calc((62/860)*100%);
+}
+
+.case-study__title{
+    font-weight: bold;
+}
+
+.case-study__img{
+    margin-top: 20px;
+    max-width: 352px;
+}
+
+.case-study__text{
+    margin-top: 20px;
+    font-weight: 14px;
+}
+
+#contact{
+    margin-top: 72px;
+}

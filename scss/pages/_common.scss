@@ -130,14 +130,15 @@ li {
 
 /* 下層ページ共通 */
 
-.section__wrapper{
-     max-width: 953px;
-        width: 100%;
+.section__wrapper {
+    max-width: 953px;
+    width: 100%;
 
 }
 
 .section__top {
     padding-top: 765px;
+
     .flex-box {
         gap: calc((116/953)*100%);
         margin-top: 64px;
@@ -156,7 +157,7 @@ li {
     width: 100%;
 }
 
-.section__illust{
+.section__illust {
     max-width: 165px;
     width: 100%;
 }
@@ -166,17 +167,17 @@ li {
     gap: calc((24/953)*100%);
     margin-top: 64px;
 
-    li{
+    li {
         max-width: 208px;
         width: 100%;
     }
 
-    
+
     a {
         display: inline-block;
         border: solid $sab-color 1px;
         border-radius: 10px;
-       width: 100%;
+        width: 100%;
         padding-top: 11px;
         padding-bottom: 34px;
         text-align: center;
