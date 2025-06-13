@@ -4,30 +4,92 @@
 **************************/
 
 .footer {
-    margin-top: 117px;
+    margin-top: 115px;
+    padding-bottom: 26px;
+
+    @include sp {
+        margin-top: 20px;
+        text-align: center;
+        padding-bottom: 24px;
+    }
 
     .flex-box {
-        gap: calc((109/1160)*100%);
-         }
+        gap: calc((109/1120)*100%);
+
+        @include sp {
+            flex-direction: column;
+        }
+    }
 }
 
 .footer__logo {
-    /* max-width: calc((222/1160)*100%);
-   */
     max-width: 222px;
 
+    @include sp {
+        margin: 0 auto;
+    }
+
+    a{
+        &:hover{
+            opacity: 0.6;
+            transition: 0.6s;
+        }
+    }
 }
 
 .footer__text-box {
-    margin-top: 23px;
+    margin-top: 39px;
     width: 100%;
+    min-width: 340px;
+
+    @include pc-s {
+        line-height: 1.5;
+    }
+
+    @include tab {
+        min-width: 245px;
+    }
+
+    @include sp {
+        font-size: 12px;
+        margin-top: 25px;
+
+    }
 
     p {
         margin-top: 16px;
+
+        @include sp {
+            margin-top: 0 ;
+        }
     }
 
-    span {
+    .text-left {
+        min-width: 48px;
+
+        @include sp {
+            min-width: 0;
+        }
+
+        .tab-brake {
+            display: none;
+
+            @include tab {
+                display: block;
+            }
+        }
+    }
+
+    .text-right {
         margin-left: 16px;
+    }
+
+    .flex-box-center {
+        @include sp {
+            justify-content: center;
+            margin-top: 12px;
+        }
+
     }
 }
 
@@ -38,17 +100,48 @@
     max-width: 488px;
     width: 100%;
 
+    @include sp {
+        margin-top: 33px;
+        max-width: 100%;
+    }
+
     .flex-box-center {
         gap: calc((24/488)*100%);
         margin-bottom: 40px;
         flex-wrap: wrap;
+        row-gap: 40px;
+
+        @include tab {
+            margin-bottom: 0;
+            flex-direction: column;
+            row-gap: 0;
+        }
+
+        a {
+            @include tab {
+                margin-top: 32px;
+            }
+        }
     }
 
+}
+
+.footer__adress{
+    @include sp {
+        line-height: 2.5;
+    }
 }
 
 .main-icon {
     display: flex;
     gap: 8px;
+    align-items: flex-start;
+
+    @include sp {
+        margin: 0 auto;
+        margin-top: 30px !important;
+        padding-right: 25px;
+    }
 
     img {
         max-width: 20px;
@@ -60,4 +153,17 @@
 .copyright {
     margin-top: 7px;
     text-align: end;
+    font-size: 14px;
+    margin-right: 16px;
+
+    @include tab {
+        margin-top: 40px;
+    }
+
+    @include sp {
+        font-size: 12px;
+        margin-top: 56px;
+        text-align: center;
+        margin-right: 0;
+    }
 }

@@ -3,56 +3,125 @@
     about
 **************************/
 
-.about__wrapper{
+.about__wrapper {
     margin-top: 71px;
 
-    .flex-box{
-        gap: 196px;
-        align-items:flex-start
+    .flex-box {
+        gap: calc((196/1120)*100%);
+        align-items: flex-start;
+
+        @include tab {
+            gap: 0;
+            flex-direction: column;
+        }
+
+        @include sp {
+            flex-direction: column;
+        }
     }
 }
 
-.about__left{
+.about__left {
     max-width: 429px;
     width: 100%;
+
+    @include tab {
+        order: 2;
+        max-width: 100%;
+    }
 }
 
-.about__title{
+.about__title {
     max-width: 429px;
+    width: 100%;
+
+    @include sp {
+        max-width: 242px;
+    }
 }
 
-.about__text{
+.about__text {
     line-height: 1.8;
     margin-top: 40px;
+
+    @include sp {
+        font-size: 14px;
+        margin-top: 45px;
+    }
+
 }
 
-.about__btn{
+.about__btn {
     margin-top: 40px;
+
+    @include sp {
+        margin-top: 30px;
+    }
 }
 
-.about__right{
-    gap: 20px !important;
-}
-
-.about__illust{
-    max-width: 221.8px;
+.about__right {
+    max-width: 495px;
     width: 100%;
-    margin-top:-105px;
-    z-index: 2;
+    gap: 20px;
+
+    @include tab {
+        order: 1;
+        justify-content: flex-end;
+        gap: 9px;
+        max-width: 100%;
+    }
+
+
 }
 
-.about__slogan{
+.about__illust {
+    width: calc((161/495)*100%);
+    min-width: 90px;
+    margin-top: -105px;
+    z-index: 2;
+
+    @include tab {
+        width: calc((60/375)*100%);
+        min-width: 60px;
+        margin-top: -90px;
+    }
+}
+
+.about__slogan {
     font-size: 40px;
-    line-height: 1.5;
     background-color: $bg-color;
-    padding: 16px 40px;
+    padding: 26px 34px 0 40px;
     writing-mode: vertical-rl;
     letter-spacing: 20px;
     margin-top: -303px;
     z-index: 2;
     display: inline;
 
-    span{
+    span {
         color: $sab-color;
+    }
+
+    .text-shadow {
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        margin-right: 16px;
+        
+    }
+
+    @include pc-s {
+        margin-top: -200px;
+    }
+
+    @include tab {
+        font-size: 36px;
+        padding: 26px 26px 0 30px;
+        margin-top: -230px;
+        right: 0;
+    }
+
+    @include sp {
+        font-size: 24px;
+        letter-spacing: 12px;
+        padding: 26px 24px 5px;
+        margin-right: 7px;
     }
 }

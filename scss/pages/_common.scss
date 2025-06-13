@@ -30,21 +30,43 @@ li {
 
 .container {
     margin-left: 280px;
+
+    @include sp {
+        margin-left: 0;
+    }
 }
 
 .wrapper {
+    box-sizing: content-box;
     max-width: 1120px;
+    padding-right: 20px;
     margin: 0 auto 0 0;
+
+    @include sp {
+        padding: 0 20px;
+        margin: 0;
+        box-sizing: border-box;
+    }
 }
 
 .sab-title {
     font-size: 24px;
     font-weight: bold;
+
+    @include sp {
+        font-size: 20px;
+    }
 }
 
 .title__img {
-    margin-top: 20px;
-    padding: 20px 0;
+    margin-top: 22px;
+    padding: 21px 0;
+
+    @include sp {
+        margin-top: 16px;
+        padding: 10px 0;
+    }
+
 }
 
 .flex-box {
@@ -59,15 +81,26 @@ li {
     a {
         display: inline-block;
         box-sizing: border-box;
-        /* ここmax-width: 240px;だとできない　 */
-        max-width: 242px;
+        max-width: 240px;
         width: 100%;
         border: 1px solid $main-color;
         background-color: #FFF;
         border-radius: 10px;
         font-weight: bold;
-        padding: 22px 82px;
+        padding: 21px 80px;
         position: relative;
+
+        
+        &:hover{
+            background-color: $main-color;
+            color: #FFF;
+            transition: all 0.8s;
+
+            &::after{
+                color: #FFF;
+            }
+        }
+
 
         &::after {
             content: "⚫︎";
@@ -79,6 +112,8 @@ li {
         }
     }
 }
+
+
 
 
 /*ローディング*/
@@ -130,24 +165,81 @@ li {
 
 /* 下層ページ共通 */
 
+
+.bg-color {
+    padding-bottom: 563px;
+    width: calc((727/1440)*100%);
+    background-color: $sab-color;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    @include pc-s {
+        padding-bottom: 400px;
+    }
+
+    @include tab {
+        padding-bottom: 250px;
+    }
+
+
+    @include sp {
+        padding-bottom: 300px;
+    }
+}
+
+
+.fv__img {
+    position: relative;
+    top: 40px;
+
+    img {
+        border-radius: 50px;
+    }
+
+    @include sp {
+        margin-right: 0;
+        top: 20px;
+    }
+}
+
+
 .section__wrapper {
     max-width: 953px;
     width: 100%;
+    padding-right: 20px;
+    box-sizing: content-box;
 
+    @include sp {
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
 }
 
-.section__top {
-    padding-top: 765px;
 
-    .flex-box {
-        gap: calc((116/953)*100%);
-        margin-top: 64px;
-    }
+.section__text-box {
+    @include sp {}
 }
 
 .section__main-title {
     font-size: 40px;
     font-weight: bold;
+
+    @include sp {
+        font-size: 24px;
+    }
+}
+
+.section__title {
+    font-size: 32px;
+    font-weight: bold;
+
+    @include sp {
+        font-size: 24px;
+        text-align: center;
+        margin-top: 100px;
+    }
 }
 
 .section__text {
@@ -155,23 +247,41 @@ li {
     margin-top: 64px;
     max-width: 422px;
     width: 100%;
+
+    @include sp {
+        max-width: 100%;
+    }
 }
 
 .section__illust {
     max-width: 165px;
     width: 100%;
+
+
+    @include sp {
+        max-width: 100px;
+        margin-top: -50px;
+        position: absolute;
+        right: 0;
+        top: -20px;
+    }
 }
 
-.page__nav {
+.page__nav ul {
     display: flex;
     gap: calc((24/953)*100%);
-    margin-top: 64px;
+
+    @include tab {
+        justify-content: center;
+        font-size: 12px;
+        margin-top: 40px;
+    }
 
     li {
         max-width: 208px;
         width: 100%;
+        display: flex;
     }
-
 
     a {
         display: inline-block;
@@ -183,21 +293,56 @@ li {
         text-align: center;
         position: relative;
 
+
+        &:hover{
+            background-color: $sab-color;
+            color: #FFF;
+            transition: all 0.5s;
+
+            &::after{
+                border-top: solid 2px #fff;
+                border-right: solid 2px #fff;
+            }
+        }
+
         &::after {
             content: "";
             width: 5px;
             height: 5px;
             border: 0;
             border-top: solid 2px $sab-color;
-            ;
             border-right: solid 2px $sab-color;
-            ;
             position: absolute;
             top: 40px;
             left: 50%;
             transform: translateX(-50%) rotate(135deg);
             margin: auto;
+
+            
         }
     }
 
+
+    span {
+        @include tab {
+            display: none;
+        }
+    }
+
+}
+
+.tab-brake {
+    display: none;
+
+    @include tab {
+        display: block;
+    }
+}
+
+.sp-brake {
+    display: none;
+
+    @include sp {
+        display: block;
+    }
 }

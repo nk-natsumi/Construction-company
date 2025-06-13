@@ -4,15 +4,44 @@
     form
 *******************/
 
+.section__top {
+    padding-top: 40px;
+
+    .flex-box {
+        gap: calc((116/953)*100%);
+        margin-top: 69px;
+
+        @include sp {
+            flex-direction: column;
+            position: relative;
+        }
+    }
+}
+
 .form__wrapper {
     max-width: 880px;
     width: 100%;
     margin-top: 62px;
     gap: calc((150/880)*100%);
+
+    @include tab {
+        flex-direction: column;
+        max-width: 100%;
+        padding: 0 20px;
+    }
 }
 
 .form__box {
-    width: calc((470/880)*100%);
+    width: 470px;
+
+    @include tab {
+        margin: 0 auto;
+    }
+
+    @include sp{
+        max-width: 470px;
+        width: 100%;
+    }
 }
 
 .form__label-item {
@@ -20,7 +49,7 @@
     width: 100%;
     border: 3px solid $sab-color;
     font-weight: bold;
-    padding: 7px 0 13px;
+    padding: 4px 0 10px;
     text-align: center;
 }
 
@@ -56,11 +85,24 @@
 
 .inquiry-box {
     .flex-box {
-        margin-top: 14px;
+        margin-top: 9px;
     }
 
     .inquiry-top {
-        margin-top: 13px;
+        margin-top: 27px;
+    }
+
+    input,
+    select {
+        vertical-align: middle;
+        margin: 0 0 3px 0;
+        width: 16px;
+        height: 16px;
+        align-items: center;
+    }
+
+    span {
+        margin-left: 3px;
     }
 }
 
@@ -68,7 +110,7 @@
 
 .form__item {
     label {
-        margin-top: 26px;
+        margin-top: 24px;
     }
 
     input {
@@ -82,7 +124,10 @@
         color: $main-color;
 
         &::placeholder {
-            color: rgba(170, 170, 170, 1);
+            color: #C2C2C2;
+            font-weight: bold;
+            font-size: 16px;
+            font-family: "Zen Kaku Gothic New";
         }
     }
 
@@ -134,14 +179,37 @@
     font-weight: normal;
 
     input {
+        appearance: none;
+        -webkit-appearance: none;
         width: 16px;
         height: 16px;
+        border: 1px solid $sab-color;
+        background-color: #fff;
+        cursor: pointer;
+        position: relative;
         margin: 0;
-        margin-bottom: 2px;
+        margin-bottom: 6px;
+
+        &:checked {
+            background-color: $sab-color;
+            border-color: $sab-color;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 1px;
+                left: 4px;
+                width: 4px;
+                height: 8px;
+                border: solid #fff;
+                border-width: 0 2px 2px 0;
+                transform: rotate(45deg);
+            }
+        }
     }
 
     label {
-        margin-left: 8px;
+        margin-left: 3px;
     }
 }
 
@@ -152,15 +220,26 @@
         display: block;
         box-sizing: border-box;
         max-width: 286px;
-        margin: 69px auto 0;
+        margin: 62px auto 0;
         width: 100%;
         background-color: $sab-color;
         border: 1px solid $sab-color;
         border-radius: 10px;
         font-weight: bold;
         color: #fff;
-        padding: 22px 82px;
+        padding: 19px 82px;
         position: relative;
+        font-size: 16px;
+
+        &:hover{
+            background-color: #fff;
+            color: $sab-color;
+            transition: 0.8s;
+
+            &::after {
+                color: $sab-color;
+            }
+        }
 
         &::after {
             content: "⚫︎";
@@ -178,7 +257,13 @@
 .form__tel {
     width: calc((260/880)*100%);
 
-    a{
+    @include tab {
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    a {
         font-family: $sab-font;
         color: $main-color;
         font-weight: normal;
@@ -187,12 +272,12 @@
         margin-top: 29px;
     }
 
-    .tel-open{
+    .tel-open {
         margin-top: 14px;
         font-size: 12px;
     }
 }
 
-#contact{
-    margin-top: 72px;
+#contact {
+    margin-top: 69px;
 }

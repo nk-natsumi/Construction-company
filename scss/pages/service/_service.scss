@@ -4,18 +4,44 @@
     service
 *******************/
 
+.section__top {
+    padding-top: 40px;
+
+    .flex-box {
+        gap: calc((116/953)*100%);
+        margin-top: 54px;
+
+        @include sp {
+            flex-direction: column;
+            position: relative;
+        }
+    }
+}
+
+.page__nav ul{
+    margin-top: 52px;
+}
+
 #residential-architecture {
     padding-top: 3px;
 }
 
 .works {
     margin-top: 72px;
+
+    @include sp{
+        margin-top: 100px;
+    }
 }
 
 .works__inner {
     max-width: 860px;
     width: 100%;
-    margin: 0 auto;
+    margin-left: 50px;
+
+    @include pc-s{
+        margin: 0 auto;
+    }
 }
 
 .works__title {
@@ -24,6 +50,10 @@
     margin-top: 56px;
     padding-bottom: 39px;
     border-bottom: solid 1px $line-color;
+
+    @include sp{
+        font-size: 18px;
+    }
 }
 
 .works__text-box {
@@ -31,7 +61,14 @@
     line-height: 1.8;
     gap: calc((40/860)*100%);
     align-items: stretch;
-    min-height: 311px;
+    min-height: 203px;
+
+    @include sp{
+        flex-direction: column;
+        max-width: 100%;
+        height: auto;
+        min-height: 311px;
+    }
 }
 
 .works__text-left,
@@ -40,34 +77,65 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 
 .works__text-left {
     font-size: 20px;
     font-weight: bold;
     width: calc((374/860)*100%);
+
+    @include sp{
+        width: 100%;
+        font-size: 16px;
+    }
 }
 
 .works__text-right {
     width: calc((446/860)*100%);
+    @include sp{
+        width: 100%;
+        font-size: 14px;
+        margin-top: 20px;
+    }
 }
 
 .case-study{
     gap: calc((62/860)*100%);
+    margin-top: 88px;
+
+    @include sp{
+        margin-top: 20px;
+        font-size: 14px;
+        flex-wrap: wrap;
+    }
 }
 
 .case-study__title{
     font-weight: bold;
+
+    @include sp{
+        margin-top: 30px;
+    }
 }
 
 .case-study__img{
     margin-top: 20px;
     max-width: 352px;
+
+    @include sp{
+        margin-top: 10px;
+        max-width: 100%;
+    }
 }
 
 .case-study__text{
     margin-top: 20px;
-    font-weight: 14px;
+    font-size: 14px;
+    @include sp{
+        margin-top: 10px;
+    }
+
 }
 
 #contact{

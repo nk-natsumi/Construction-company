@@ -34,7 +34,6 @@
     <div class="loading">
         <img src="../img/logo-pc.svg" alt="青牡丹工務店ロゴ" class="loading__logo">
     </div>
-
     <div class="contents hidden">
         <header class="header">
             <div class="header__wrap">
@@ -44,14 +43,19 @@
 
                 <nav class="header__nav">
                     <ul class="header__list">
+                        <li class="header__sp-menu">
+                            <a class="header__item-more" href="../index.html">
+                                トップページ
+                            </a>
+                        </li>
                         <li class="header__item header__link-group">
                             <div class="header__link-title">
                                 <a href="index.html">私達について</a>
                             </div>
                             <div class="header__sub-menu">
-                                <a href="#management-philosophy" class="sab--01">経営理念</a>
-                                <a href="#corporate-profile" class="sab--02">会社概要</a>
-                                <a href="#safety-initiatives" class="sab--03">安全への取り組み</a>
+                                <a href="index.html#management-philosophy" class="sab--01">経営理念</a>
+                                <a href="index.html#corporate-profile" class="sab--02">会社概要</a>
+                                <a href="index.html#safety-initiatives" class="sab--03">安全への取り組み</a>
                             </div>
                         </li>
                         <li class="header__item header__link-group">
@@ -61,19 +65,18 @@
                             <div class="header__sub-menu">
                                 <a href="../service/index.html#residential-architecture" class="sab--01">住宅建築・リフォーム</a>
                                 <a href="../service/index.html#corporate-profile" class="sab--02">法人新築・リフォーム</a>
-                                <a href="../service/index.html#public works" class="sab--03">公共工事</a>
+                                <a href="../service/index.html#public-works" class="sab--03">公共工事</a>
                             </div>
                         </li>
-                        <li class="header__item header__item-more"><a href="../index.html#news">お知らせ</a></li>
+                        <li class="header__item header__item-more header__news"><a href="../index.html#news">お知らせ</a></li>
                         <li class="header__item header__item-more header__info">
                             <a href="../contact/index.html"><img src="../img/mail_icon.svg" alt="メールアイコン">お問い合わせ</a>
                         </li>
                     </ul>
+                    <div class="header__sp-menu">
+                        <p class="header__copyright">&copy;AOBOTAN INC.</p>
+                    </div>
                 </nav>
-                <div class="copyright header__sp-menu">
-                    <p class="copyright__text">&copy;AOBOTAN INC.</p>
-                </div>
-
 
                 <button type="button" class="menu-trigger" aria-label="メニュー">
                     <span></span>
@@ -87,11 +90,10 @@
             <main class="main">
                 <div class="bg-color"></div>
                 <section class="fv">
-                    <div class="fv__wrapper">
+                    <div class="wrapper fv__wrapper">
                         <div class="fv__img">
-                            <div class="fv__img-pc">
-                                <img src="../img/about/about-us 1.jpg" alt="">
-                            </div>
+                            <img src="../img/about/about-us 1.jpg" alt="">
+
                         </div>
                     </div>
                 </section>
@@ -99,11 +101,11 @@
                 <section class="about">
                     <div class="section__wrapper section__top">
                         <div class="flex-box">
-                            <div class="about__text-box">
+                            <div class="section__text-box">
                                 <h2 class="section__main-title">
                                     私達について
                                 </h2>
-                                <p class="section__text">「丁寧な家造りで、理想を現実に」
+                                <p class="section__text">「丁寧な家造りで、理想を現実に<br>
                                     これを実現するために、わたしたちが行っていることを
                                     一部ご紹介します。</p>
                             </div>
@@ -112,9 +114,11 @@
                             </div>
                         </div>
                         <nav class="page__nav">
-                            <li class="nav-item"><a href="#management-philosophy">経営理念</a></li>
-                            <li class="nav-item"><a href="#corporate-profile">会社概要</a></li>
-                            <li class="nav-item"><a href="#safety-initiatives">安全への取り組み</a></li>
+                            <ul>
+                                <li class="nav-item"><a href="#management-philosophy">経営理念</a></li>
+                                <li class="nav-item"><a href="#corporate-profile">会社概要</a></li>
+                                <li class="nav-item"><a href="#safety-initiatives">安全への取り組み</a></li>
+                            </ul>
                         </nav>
                     </div>
                 </section>
@@ -174,7 +178,8 @@
                             </div>
                             <div class="flex-box-center">
                                 <dt class="corporate__title">本社所在地</dt>
-                                <dd class="corporate-profile__text">〒000-0000　大阪府大阪市中央区北区南町5-6-7</dd>
+                                <dd class="corporate-profile__text">〒000-0000<br class="sp-brake">大阪府大阪市中央区北区南町5-6-7
+                                </dd>
                             </div>
                             <div class="flex-box-center">
                                 <dt class="corporate__title">代表取締役</dt>
@@ -190,35 +195,38 @@
                             安全への取り組み
                         </h2>
                         <div class="safety__content">
-                            <h3 class="safety__title">経営層による安全衛生巡視</h3>
-                            <div class="safety__text-box flex-box">
-                                <p class="safety__text">
-                                    経営層による安全衛生巡視は、当社の安全管理体制の中核を担う活動の一つです。この巡視では、経営者や上級管理職が定期的に現場を訪問し、安全な作業環境の確保や安全基準の遵守を徹底することが主な目的です。<br>
-                                    具体的には、巡視の際には安全規則や法令の遵守状況を点検し、作業現場における危険な箇所や潜在的なリスクを特定します。また、機械や設備の安全装置が正しく機能しているかどうかも確認します。さらに、作業員に対して安全教育や指導を行い、安全意識の向上を図ります。
-                                </p>
-                                <div class="safety__img">
-                                    <img src="../img/about/safety01 1.jpg" alt="">
+                            <div class="safety__item">
+                                <h3 class="safety__title">経営層による安全衛生巡視</h3>
+                                <div class="safety__text-box flex-box">
+                                    <p class="safety__text">
+                                        経営層による安全衛生巡視は、当社の安全管理体制の中核を担う活動の一つです。この巡視では、経営者や上級管理職が定期的に現場を訪問し、安全な作業環境の確保や安全基準の遵守を徹底することが主な目的です。<br>
+                                        具体的には、巡視の際には安全規則や法令の遵守状況を点検し、作業現場における危険な箇所や潜在的なリスクを特定します。また、機械や設備の安全装置が正しく機能しているかどうかも確認します。さらに、作業員に対して安全教育や指導を行い、安全意識の向上を図ります。
+                                    </p>
+                                    <div class="safety__img">
+                                        <img src="../img/about/safety01 1.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="safety__item">
+                                <h3 class="safety__title">労働災害防止への取り組み・教育体制</h3>
+                                <div class="flex-box">
+                                    <p class="safety__text">
+                                        労働災害の防止に向けた従業員への教育・訓練も欠かせません。新入社員や新規作業員には、安全教育プログラムを実施し、作業時の安全ルールや手順、危険な状況の認識方法などを徹底的に指導しています。さらに、定期的な安全講習会や研修を通じて、従業員の安全意識を高める取り組みを行っています。<br>
+                                        労働災害が発生した場合には、速やかに原因究明を行い、再発防止策を迅速に実施します。また、従業員からの安全に関する意見や提案を積極的に受け付け、改善に向けた取り組みを推進しています。
+                                    </p>
+                                    <div class="safety__img">
+                                        <img src="../img/about/safety02 1.jpg" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="safety__content">
-                            <h3 class="safety__title">労働災害防止への取り組み・教育体制</h3>
-                            <div class="flex-box">
-                                <p class="safety__text">
-                                    労働災害の防止に向けた従業員への教育・訓練も欠かせません。新入社員や新規作業員には、安全教育プログラムを実施し、作業時の安全ルールや手順、危険な状況の認識方法などを徹底的に指導しています。さらに、定期的な安全講習会や研修を通じて、従業員の安全意識を高める取り組みを行っています。<br>
-                                    労働災害が発生した場合には、速やかに原因究明を行い、再発防止策を迅速に実施します。また、従業員からの安全に関する意見や提案を積極的に受け付け、改善に向けた取り組みを推進しています。
-                                </p>
-                                <div class="safety__img">
-                                    <img src="../img/about/safety02 1.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
+
 
                     </div>
                 </section>
 
                 <section id="contact">
-                    <div class="wrapper contact__wrapper">
+                    <div class="contact__wrapper">
                         <div class="flex-box">
                             <div class="contact__left">
                                 <div class="contact__upper">
@@ -229,15 +237,15 @@
                                 </div>
                                 <div class="contact__lower flex-box-center">
                                     <div class="contact__tel-text">
-                                        <p class="contact__big">Tel</p>
+                                        <p class="contact__big ---01">Tel</p>
                                         <p class="contact__small">お電話</p>
                                     </div>
                                     <div class="contact__tel-text">
-                                        <a class="contact__big" href="tel:000-0000-0000">000-0000-0000</a>
+                                        <a class="contact__big ---02" href="tel:0000-000-0000">0000-000-0000</a>
                                         <p class="contact__small">営業時間10:00~20:00</p>
                                     </div>
                                     <div class="contact__btn more-btn">
-                                        <a href="">
+                                        <a href="../contact/index.html">
                                             <img src="../img/mail_icon.svg" alt="">
                                             メールフォームはこちら
                                         </a>
@@ -262,34 +270,42 @@
                                 <a href="../index.html"><img src="../img/logo-pc.svg" alt="青牡丹工務店"></a>
                             </div>
                             <div class="footer__text-box">
-                                <p class="footer__adress">〒000-0000<span>大阪府大阪市中央区北区南町5-6-7</span></p>
-                                <p class="footer__open-time">営業時間<span>10:00~20:00</span></p>
-                                <p class="footer__vacation">定休日<span>日曜日、祝日、年末年始（12月31日から1月3日まで）</span></p>
+                                <div class="footer__adress">
+                                    <p class="text-left">〒000-0000　<br class="tab-brake">大阪府大阪市中央区北区南町5-6-7</p>
+                                </div>
+                                <div class="footer__open-time flex-box-center">
+                                    <p class="text-left">営業時間</p>
+                                    <p class="text-right">10:00~20:00</p>
+                                </div>
+                                <div class="footer__vacation flex-box-center">
+                                    <p class="text-left">定休日</p>
+                                    <p class="text-right">日曜日、祝日、年末年始（12月31日から1月3日まで）</p>
+                                </div>
                             </div>
                         </div>
                         <nav class="footer__nav">
                             <li class="footer__item flex-box-center">
                                 <a href="../index.html">トップページ</a>
-                                <a href="index.html">私たちについて</a>
-                                <a href="#management-philosophy">経営理念</a>
+                                <a href="index.html">私達について</a>
+                                <a href="index.html#management-philosophy">経営理念</a>
                             </li>
                             <li class="footer__item flex-box-center">
-                                <a href="#corporate-profile">会社概要</a>
-                                <a href="#safety-initiatives">安全への取り組み</a>
+                                <a href="index.html#corporate-profile">会社概要</a>
+                                <a href="index.html#safety-initiatives">安全への取り組み</a>
                                 <a href="../service/index.html">事業内容</a>
                                 <a href="../service/index.html#residential-architecture">住宅建築・リフォーム</a>
                             </li>
                             <li class="footer__item flex-box-center">
                                 <a href="../service/index.html#corporate-profile">法人新築・リフォーム</a>
-                                <a href="../service/index.html#public works">公共工事</a>
+                                <a href="../service/index.html#public-works">公共工事</a>
                                 <a href="../index.html#news">お知らせ</a>
-                                <a class="main-icon" href="../contact/index.html"><img src="../../img/mail_icon.svg"
+                                <a class="main-icon" href="../contact/index.html"><img src="../img/mail_icon.svg"
                                         alt="メールアイコン">お問い合わせ</a>
                             </li>
                         </nav>
                     </div>
                     <div class="copyright">
-                        <p class="copyright__text">&copy;AOBOTAN INC.</p>
+                        <p class="copyright__text">&copy; AOBOTAN INC.</p>
                     </div>
                 </div>
             </footer>

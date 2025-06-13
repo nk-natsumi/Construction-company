@@ -43,6 +43,11 @@
 
                 <nav class="header__nav">
                     <ul class="header__list">
+                        <li class="header__sp-menu">
+                            <a class="header__item-more" href="index.html">
+                                トップページ
+                            </a>
+                        </li>
                         <li class="header__item header__link-group">
                             <div class="header__link-title">
                                 <a href="about/index.html">私達について</a>
@@ -60,19 +65,18 @@
                             <div class="header__sub-menu">
                                 <a href="service/index.html#residential-architecture" class="sab--01">住宅建築・リフォーム</a>
                                 <a href="service/index.html#corporate-profile" class="sab--02">法人新築・リフォーム</a>
-                                <a href="service/index.html#public works" class="sab--03">公共工事</a>
+                                <a href="service/index.html#public-works" class="sab--03">公共工事</a>
                             </div>
                         </li>
-                        <li class="header__item header__item-more"><a href="#news">お知らせ</a></li>
+                        <li class="header__item header__item-more header__news"><a href="#news">お知らせ</a></li>
                         <li class="header__item header__item-more header__info">
                             <a href="contact/index.html"><img src="img/mail_icon.svg" alt="メールアイコン">お問い合わせ</a>
                         </li>
                     </ul>
+                    <div class="header__sp-menu">
+                        <p class="header__copyright">&copy;AOBOTAN INC.</p>
+                    </div>
                 </nav>
-                <div class="copyright header__sp-menu">
-                    <p class="copyright__text">&copy;AOBOTAN INC.</p>
-                </div>
-
 
                 <button type="button" class="menu-trigger" aria-label="メニュー">
                     <span></span>
@@ -84,10 +88,10 @@
 
         <div class="container">
             <main class="main">
-                <div class="bg-color"></div>
+                <div class="top__bg-color"></div>
                 <section class="fv">
-                    <div class="wrapper fv__wrapper">
-                        <div class="fv__img">
+                    <div class="fv__wrapper">
+                        <div class="fv__img-top">
                             <div class="fv__img-pc">
                                 <img src="img/first-view 1.jpg" alt="">
                             </div>
@@ -136,12 +140,13 @@
                                     <a href="about/index.html">Read More</a>
                                 </div>
                             </div>
-                            <div class="about__right flex-box">
+                            <div class="about__right flex-box-center">
                                 <div class="about__illust">
                                     <img src="img/interview_01 1.png" alt="">
                                 </div>
                                 <h3 class="about__slogan">
-                                    <span>丁寧な家造り</span>で<br>理想を現実に
+                                    <p><span>丁寧な家造り</span>で
+                                    <p class="text-shadow">理想を現実に</p>
                                 </h3>
                             </div>
                         </div>
@@ -165,7 +170,7 @@
                             </div>
                         </div>
                         <ul class="service__content service__content-top flex-box-center">
-                            <li class="service__img">
+                            <li class="service__img ">
                                 <img src="img/house01 1.jpg" alt="">
                             </li>
                             <li class="service__item">
@@ -179,13 +184,13 @@
                                     <p>注文住宅では、お客様のニーズや希望に合わせて、オーダーメイドの家を提供します。私たちは、建物の設計から完成までのプロセスで、お客様と緊密に連携し、理想の暮らしを実現するための最適な解決策を提案します。
                                     </p>
                                     <div class="more-btn about__btn">
-                                        <a href="service/index.html#residentialーarchitecture">Read More</a>
+                                        <a href="service/index.html#residential-architecture">Read More</a>
                                     </div>
                                 </div>
                             </li>
                         </ul>
                         <ul class="service__content flex-box-center">
-                            <li class="service__item">
+                            <li class="service__item service__center">
                                 <div class="service__namber --02">
                                     <img src="img/02.png" alt="2">
                                 </div>
@@ -196,7 +201,7 @@
                                     <p>法人新築では、商業施設やオフィスビル、工場など、さまざまなニーズに応じた建物の新築を手がけています。お客様のビジネスの要件やイメージに合わせて、効率的で機能的な建物を設計・施工します。
                                     </p>
                                     <div class="more-btn about__btn">
-                                        <a href="service/index.html#corporate-new-construction">Read More</a>
+                                        <a href="service/index.html#corporate-profile">Read More</a>
                                     </div>
                                 </div>
                             </li>
@@ -209,7 +214,7 @@
                                 <img src="img/house03 1.jpg" alt="">
                             </li>
                             <li class="service__item">
-                                <div class="service__namber  --01">
+                                <div class="service__namber  --03">
                                     <img src="img/03.png" alt="3">
                                 </div>
                                 <div class="service__text-box">
@@ -219,7 +224,7 @@
                                     <p>公共工事では、道路や橋梁、公共施設など、地域社会に欠かせないインフラや施設の建設・改修を行います。私たちは、公共の福祉と安全を考慮しながら、厳格な規制や基準に適合した施工を行います。
                                     </p>
                                     <div class="more-btn about__btn">
-                                        <a href="service/index.html#public works">Read More</a>
+                                        <a href="service/index.html#public-works">Read More</a>
                                     </div>
                                 </div>
                             </li>
@@ -230,7 +235,7 @@
                 <section id="news">
                     <div class="wrapper news__wrapper">
                         <div class="news__title-box">
-                            <p class="sab-title">事業内容</p>
+                            <p class="sab-title">お知らせ</p>
                             <h2 class="news__title title__img">
                                 <img src="img/NEWS.png" alt="news">
                             </h2>
@@ -242,7 +247,7 @@
                                         <h3 class="news__category">イベント情報</h3>
                                         <time class="news__time" datetime="">2024.06.03</time>
                                     </div>
-                                    <p class="news__text">
+                                    <p class="news__text news-1">
                                         住宅設計相談会を実施します。弊社建築士と将来の家造りを真剣に考えませんか？
                                     </p>
                                 </a>
@@ -372,7 +377,7 @@
                 </section>
 
                 <section id="contact">
-                    <div class="wrapper contact__wrapper">
+                    <div class="contact__wrapper">
                         <div class="flex-box">
                             <div class="contact__left">
                                 <div class="contact__upper">
@@ -383,11 +388,11 @@
                                 </div>
                                 <div class="contact__lower flex-box-center">
                                     <div class="contact__tel-text">
-                                        <p class="contact__big">Tel</p>
+                                        <p class="contact__big ---01">Tel</p>
                                         <p class="contact__small">お電話</p>
                                     </div>
                                     <div class="contact__tel-text">
-                                        <a class="contact__big" href="tel:000-0000-0000">000-0000-0000</a>
+                                        <a class="contact__big ---02" href="tel:0000-000-0000">0000-000-0000</a>
                                         <p class="contact__small">営業時間10:00~20:00</p>
                                     </div>
                                     <div class="contact__btn more-btn">
@@ -416,9 +421,17 @@
                                 <a href="index.html"><img src="img/logo-pc.svg" alt="青牡丹工務店"></a>
                             </div>
                             <div class="footer__text-box">
-                                <p class="footer__adress">〒000-0000<span>大阪府大阪市中央区北区南町5-6-7</span></p>
-                                <p class="footer__open-time">営業時間<span>10:00~20:00</span></p>
-                                <p class="footer__vacation">定休日<span>日曜日、祝日、年末年始（12月31日から1月3日まで）</span></p>
+                                <div class="footer__adress">
+                                    <p class="text-left">〒000-0000　<br class="tab-brake">大阪府大阪市中央区北区南町5-6-7</p>
+                                </div>
+                                <div class="footer__open-time flex-box-center">
+                                    <p class="text-left">営業時間</p>
+                                    <p class="text-right">10:00~20:00</p>
+                                </div>
+                                <div class="footer__vacation flex-box-center">
+                                    <p class="text-left">定休日</p>
+                                    <p class="text-right">日曜日、祝日、年末年始（12月31日から1月3日まで）</p>
+                                </div>
                             </div>
                         </div>
                         <nav class="footer__nav">
@@ -435,14 +448,14 @@
                             </li>
                             <li class="footer__item flex-box-center">
                                 <a href="service/index.html#corporate-profile">法人新築・リフォーム</a>
-                                <a href="service/index.html#public works">公共工事</a>
+                                <a href="service/index.html#public-works">公共工事</a>
                                 <a href="#news">お知らせ</a>
                                 <a class="main-icon" href=""><img src="img/mail_icon.svg" alt="メールアイコン">お問い合わせ</a>
                             </li>
                         </nav>
                     </div>
                     <div class="copyright">
-                        <p class="copyright__text">&copy;AOBOTAN INC.</p>
+                        <p class="copyright__text">&copy; AOBOTAN INC.</p>
                     </div>
                 </div>
             </footer>

@@ -3,77 +3,162 @@
     fv
 **************************/
 
-.bg-color {
-    height:727px;
-    width:calc((727/1440)*100%);
-    background-color: $sab-color;
-    padding: 20px;
-    float: right;
+.fv__wrapper {
     position: relative;
-    top: 0;
-}
 
-.fv {
-    position: relative;
-}
-
-.fv__img {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    border-radius: 50px;
-}
-.fv__img-pc{
     @include sp {
-        opacity: 0;
+        margin-top: 102px;
+    }
+}
+
+.top__bg-color {
+    padding-bottom: 727px;
+    width: calc((727/1440)*100%);
+    background-color: $sab-color;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    @include pc-s {
+        padding-bottom: 517px;
+    }
+
+    @include tab {
+        padding-bottom: 387px;
+    }
+
+    @include sp {
+        display: none;
+    }
+}
+
+
+
+.fv__img-top {
+    position: relative;
+    top: 40px;
+    margin-right: 40px;
+
+    @include tab {
+        top: 20px;
+        margin-right: 20px;
+    }
+
+    @include sp {
+        top: 0;
+        margin-right: 0;
+        margin-left: 10px;
+    }
+
+    img {
+        border-radius: 50px;
+
+        @include sp {
+            border-radius: 10px 0 0 10px;
+        }
+    }
+}
+
+.fv__img-pc {
+    @include sp {
+        display: none;
     }
 }
 
 .fv__img-sp {
-    opacity: 0;
+    display: none;
 
     @include sp {
-        opacity: 1;
+        display: block;
     }
 }
 
 .fv__text-content {
     position: absolute;
-    top: 673px;
+    top: calc((673/873)*100%);
     right: calc((153/1160)*100%);
+
+    @include tab {
+        max-width: 360px;
+        font-size: 12px;
+        top: calc((500/733)*100%);
+        right: calc((50/744)*100%);
+    }
+
+    @include sp {
+        top: calc((408/589)*100%);
+        left:  calc((19/375)*100%);
+        max-width: 348px;
+        width: 100%;
+    }
 }
 
 .fv__title {
+    /* clamp:(64px, 40px, 24px, 480px, 1280px; */
     font-size: 64px;
     font-weight: bold;
     background-color: #fff;
     padding: 14px;
     border-radius: 10px;
+    display: inline-block;
+
+    @include pc-s {
+        font-size: 40px;
+    }
+
+    @include tab {
+        font-size: 24px;
+        padding: 14px 13px;
+    }
 }
 
 .fv__text {
     font-weight: bold;
     margin-top: 21px;
     line-height: 2;
+
+    @include tab {
+        margin-top: 10px;
+    }
+
+    @include sp {
+        margin-top: 21px;
+        font-size: 12px;
+    }
 }
 
 
-.scroll-btn a{
-    position: relative;
-    color: $sab-color;
-    font-size: 10px;
-    font-weight: bold;
-    top: 839px;
+.scroll-btn {
+    position: absolute;
+    bottom: calc((24/889)*100%);
     left: calc((18/1160)*100%);
 
-    &::after {
-        content: "";
-        width: 112px;
-        height: 1px;
-        background-color: $sab-color;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%) rotate(90deg);
-        bottom: -64px;
+    @include sp {
+        left: calc((19/375)*100%);
+        bottom: calc((55/889)*100%);
+    }
+
+    a {
+        position: relative;
+        color: $sab-color;
+        font-size: 10px;
+        font-weight: bold;
+
+        &::after {
+            content: "";
+            width: 112px;
+            height: 1px;
+            background-color: $sab-color;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%) rotate(90deg);
+            bottom: -64px;
+
+            @include sp {
+                width: 52px;
+                bottom: -34px;
+            }
+        }
     }
 }

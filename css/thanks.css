@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**********************
     setting
 ***********************/
@@ -11,6 +12,44 @@
 .form__label-right02 {
   color: #fff;
   background-color: #4282B8;
+}
+
+.thanks-btn a {
+  display: inline-block;
+  box-sizing: border-box;
+  max-width: 286px;
+  margin: 91px 0 0;
+  padding: 19px 70px;
+  width: 100%;
+  background-color: #4282B8;
+  border: 1px solid #4282B8;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  font-size: 16px;
+}
+.thanks-btn a:hover {
+  background-color: #fff;
+  color: #4282B8;
+  transition: 0.8s;
+}
+.thanks-btn a:hover::after {
+  color: #4282B8;
+}
+.thanks-btn a::after {
+  content: "⚫︎";
+  color: #fff;
+  width: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 25px;
+}
+@media screen and (max-width: 1024px) {
+  .thanks-btn {
+    text-align: center;
+  }
 }
 
 #contact {

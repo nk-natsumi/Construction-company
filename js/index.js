@@ -1,19 +1,68 @@
 $(document).ready(function () {
     $(".menu-trigger").click(function () {
         $(this).toggleClass("active");
-        $(".header__nav,.header__item , .header__sp-menu .header__link-title , .header__sub-menu , .header__item-more").toggleClass("active");
+        $(".header__nav,.header__item , .header__sp-menu .header__link-title  , .header__sub-menu , .header__item-more").toggleClass("active");
 
     })
 
+
+    /* ナビリンククリックでスクロール＆メニューを閉じる */
+    $(".page__nav a").click(function (e) {
+        const targetId = $(this).attr("href");
+        const target = $(targetId);
+
+        if (target.length) {
+            e.preventDefault();
+            $("html, body").animate(
+                {
+                    scrollTop: target.offset().top
+                },
+                600
+            );
+        }
+    });
+
+
+    /* スクロールでfade-in */
+    $(window).on("scroll", function () {
+        $(".fade-in-up").each(function () {
+            const elemPos = $(this).offset().top;
+            const scroll = $(window).scrollTop();
+            const windowHeight = $(window).height();
+
+            if (scroll > elemPos - windowHeight + 200) {
+                $(this).addClass("active");
+            }
+        });
+    });
+
+    $(window).trigger("scroll");
+
+
+
+
     const swiper = new Swiper(".swiper", {
         loop: true, // ループ有効
-        slidesPerView: 3, // 一度に表示する枚数
+        slidesPerView: 1.8, // 一度に表示する枚数
         speed: 6000, // ループの時間
-        spaceBetween: 48,
+        spaceBetween: 16,
         allowTouchMove: false, // スワイプ無効
         autoplay: {
             delay: 0, // 途切れなくループ
         },
+
+
+        breakpoints: {
+            767: {
+                slidesPerView: 2.25,
+                spaceBetween: 24,
+            },
+
+            1024: {
+                slidesPerView: 2.75,
+                spaceBetween: 48,
+            }
+        }
     });
 
 
@@ -80,3 +129,25 @@ window.addEventListener('load', function () {
         contentsElement.classList.remove('hidden'); // hiddenクラスを取り除くことでコンテンツを表示
     }
 });
+
+$(document).ready(function () {
+    const $form = $('.contact__form');
+    const $submitBtn = $('#submit');
+
+    $form.on('input change', function () {
+        const isRadioChecked = $form.find('input[type="radio"]:checked').length > 0;
+        const isTextFilled = $form.find('input[type="text"]').filter(function () {
+            return $(this).val().trim() === '';
+        }).length === 0;
+        const isEmailFilled = $form.find('input[type="email"]').val().trim() !== '';
+        const isAddressFilled = $form.find('input[name="address"]').val().trim() !== '';
+        const isChecked = $('#confirmationCheck').is(':checked');
+
+        if (isRadioChecked && isTextFilled && isEmailFilled && isAddressFilled && isChecked) {
+            $submitBtn.prop('disabled', false);
+        } else {
+            $submitBtn.prop('disabled', true);
+        }
+    });
+});
+

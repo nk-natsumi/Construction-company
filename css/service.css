@@ -4,6 +4,24 @@
 /*****************
     service
 *******************/
+.section__top {
+  padding-top: 40px;
+}
+.section__top .flex-box {
+  gap: 12.1720881427%;
+  margin-top: 54px;
+}
+@media screen and (max-width: 767px) {
+  .section__top .flex-box {
+    flex-direction: column;
+    position: relative;
+  }
+}
+
+.page__nav ul {
+  margin-top: 52px;
+}
+
 #residential-architecture {
   padding-top: 3px;
 }
@@ -11,11 +29,21 @@
 .works {
   margin-top: 72px;
 }
+@media screen and (max-width: 767px) {
+  .works {
+    margin-top: 100px;
+  }
+}
 
 .works__inner {
   max-width: 860px;
   width: 100%;
-  margin: 0 auto;
+  margin-left: 50px;
+}
+@media screen and (max-width: 1280px) {
+  .works__inner {
+    margin: 0 auto;
+  }
 }
 
 .works__title {
@@ -25,13 +53,26 @@
   padding-bottom: 39px;
   border-bottom: solid 1px #B1C6DC;
 }
+@media screen and (max-width: 767px) {
+  .works__title {
+    font-size: 18px;
+  }
+}
 
 .works__text-box {
   margin-top: 20px;
   line-height: 1.8;
   gap: 4.6511627907%;
   align-items: stretch;
-  min-height: 311px;
+  min-height: 203px;
+}
+@media screen and (max-width: 767px) {
+  .works__text-box {
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+    min-height: 311px;
+  }
 }
 
 .works__text-left,
@@ -47,27 +88,64 @@
   font-weight: bold;
   width: 43.488372093%;
 }
+@media screen and (max-width: 767px) {
+  .works__text-left {
+    width: 100%;
+    font-size: 16px;
+  }
+}
 
 .works__text-right {
   width: 51.8604651163%;
 }
+@media screen and (max-width: 767px) {
+  .works__text-right {
+    width: 100%;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+}
 
 .case-study {
   gap: 7.2093023256%;
+  margin-top: 88px;
+}
+@media screen and (max-width: 767px) {
+  .case-study {
+    margin-top: 20px;
+    font-size: 14px;
+    flex-wrap: wrap;
+  }
 }
 
 .case-study__title {
   font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+  .case-study__title {
+    margin-top: 30px;
+  }
 }
 
 .case-study__img {
   margin-top: 20px;
   max-width: 352px;
 }
+@media screen and (max-width: 767px) {
+  .case-study__img {
+    margin-top: 10px;
+    max-width: 100%;
+  }
+}
 
 .case-study__text {
   margin-top: 20px;
-  font-weight: 14px;
+  font-size: 14px;
+}
+@media screen and (max-width: 767px) {
+  .case-study__text {
+    margin-top: 10px;
+  }
 }
 
 #contact {

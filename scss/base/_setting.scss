@@ -11,8 +11,15 @@ $sab-font:"Kanit";
 
 
 // ブレイクポイント
-$tab: 1080px;
+$pc-s: 1280px;
+$tab: 1024px;
 $sp: 767px;
+
+@mixin pc-s{
+    @media screen and (max-width: ($pc-s)) {
+        @content;
+    }
+}
 
 
 @mixin tab {

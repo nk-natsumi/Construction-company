@@ -8,25 +8,97 @@
     background-color: $bg-color;
     border-radius: 50px 0 0 50px;
     padding: 31px 40px 53px 24px;
+    position: relative;
+
+    @include tab {
+        border-radius: 0;
+    }
+
+
+    @include sp {
+        padding: 30px 0 41px 19px;
+        margin-top: 64px;
+    }
 
     .flex-box {
-        gap: 175px;
+        gap: 40px;
+        justify-content: space-between;
+
+        @include tab {
+            flex-direction: column;
+            gap: 0;
+        }
+    }
+
+
+}
+
+.contact__left {
+    max-width: 778px;
+    width: 100%;
+
+    @include tab {
+        max-width: 450px;
     }
 
 }
 
 .contact__title {
     max-width: 553px;
+
+    @include sp {
+        max-width: 311px;
+    }
 }
 
 .contact__lower {
-    margin-top: 39px;
+    margin-top: 42px;
+    flex-wrap: wrap;
+    gap: calc((64/778)*100%);
+    row-gap: 30px;
+
+    @include tab {
+        margin-top: 47px;
+        gap: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 100%;
+    }
 }
+
+.contact__tel-text:nth-child(1) {
+    @include tab {
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+    }
+
+    .contact__small {
+        @include tab {
+            margin-top: 15px;
+        }
+    }
+}
+
+.contact__tel-text:nth-child(2) {
+    @include tab {
+        margin-top: 48px;
+    }
+
+    .contact__small {
+        @include tab {
+            margin-top: 8px;
+        }
+    }
+}
+
 
 .contact__big {
     font-size: 32px;
     font-weight: bold;
     position: relative;
+    font-family: $sab-font;
+    display: inline-block;
 
     &::after {
         content: "";
@@ -34,33 +106,73 @@
         height: 1px;
         background-color: $main-color;
         position: absolute;
-        transform: translateY(-50%) rotate(90deg);
-        right: -60px;
-        top: 50%;
+        transform: rotate(90deg);
+        right: -65px;
+        top: 24px;
 
+    }
+}
+
+.---01 {
+    &::after {
+        @include tab {
+            transform: translateY(-50%) rotate(0);
+            width: 335px;
+            left: 0;
+            top: 58px;
+        }
+    }
+}
+
+.---02 {
+    &::after {
+        @include tab {
+            display: none;
+        }
     }
 }
 
 .contact__small {
     font-size: 12px;
     margin-top: 8px;
+
+    @include tab {
+        margin-top: 0;
+    }
 }
 
 .contact__illust {
     max-width: 175px;
+    right: 0;
+
+    @include tab {
+        max-width: calc((59/375)*100%);
+        position: absolute;
+        top: -28px;
+        right: calc((20/375)*100%);
+    }
 }
 
 .contact__btn {
-    a{
+    margin-left: 32px;
+
+    @include tab {
+        margin-top: 36px;
+        margin-left: 0;
+    }
+
+    a {
         display: flex;
         gap: 8px;
-    padding: 22px 40px;
-    border: solid 1px #fff;
-    max-width: 286px;
-    width: 100%;
+        padding: 18px 40px;
+        border: solid 1px #fff;
+        max-width: 286px;
+        width: 100%;
 
-    img {
-        max-width: 20px;
+        img {
+            max-width: 20px;
+        }
+
+
     }
-}
 }

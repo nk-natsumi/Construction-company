@@ -34,7 +34,6 @@
     <div class="loading">
         <img src="../img/logo-pc.svg" alt="青牡丹工務店ロゴ" class="loading__logo">
     </div>
-
     <div class="contents hidden">
         <header class="header">
             <div class="header__wrap">
@@ -44,6 +43,11 @@
 
                 <nav class="header__nav">
                     <ul class="header__list">
+                        <li class="header__sp-menu">
+                            <a class="header__item-more" href="../index.html">
+                                トップページ
+                            </a>
+                        </li>
                         <li class="header__item header__link-group">
                             <div class="header__link-title">
                                 <a href="../about/index.html">私達について</a>
@@ -59,21 +63,20 @@
                                 <a href="index.html">事業内容</a>
                             </div>
                             <div class="header__sub-menu">
-                                <a href="#residential-architecture" class="sab--01">住宅建築・リフォーム</a>
-                                <a href="#corporate-profile" class="sab--02">法人新築・リフォーム</a>
-                                <a href="#public works" class="sab--03">公共工事</a>
+                                <a href="index.html#residential-architecture" class="sab--01">住宅建築・リフォーム</a>
+                                <a href="index.html#corporate-profile" class="sab--02">法人新築・リフォーム</a>
+                                <a href="index.html#public-works" class="sab--03">公共工事</a>
                             </div>
                         </li>
-                        <li class="header__item header__item-more"><a href="../index.html#news">お知らせ</a></li>
+                        <li class="header__item header__item-more header__news"><a href="../index.html#news">お知らせ</a></li>
                         <li class="header__item header__item-more header__info">
                             <a href="../contact/index.html"><img src="../img/mail_icon.svg" alt="メールアイコン">お問い合わせ</a>
                         </li>
                     </ul>
+                    <div class="header__sp-menu">
+                        <p class="header__copyright">&copy;AOBOTAN INC.</p>
+                    </div>
                 </nav>
-                <div class="copyright header__sp-menu">
-                    <p class="copyright__text">&copy;AOBOTAN INC.</p>
-                </div>
-
 
                 <button type="button" class="menu-trigger" aria-label="メニュー">
                     <span></span>
@@ -89,9 +92,7 @@
                 <section class="fv">
                     <div class="wrapper fv__wrapper">
                         <div class="fv__img">
-                            <div class="fv__img-pc">
-                                <img src="../img/service/Firefly 木製の家の模型が机の上にある 60602 1.jpg" alt="">
-                            </div>
+                            <img src="../img/service/Firefly 木製の家の模型が机の上にある 60602 1.jpg" alt="">
                         </div>
                     </div>
                 </section>
@@ -99,7 +100,7 @@
                 <section class="service">
                     <div class="section__wrapper section__top">
                         <div class="flex-box">
-                            <div class="service__text-box">
+                            <div class="section__text-box">
                                 <h2 class="section__main-title">
                                     事業内容
                                 </h2>
@@ -111,9 +112,17 @@
                             </div>
                         </div>
                         <nav class="page__nav">
-                            <li class="nav-item"><a href="#residential-architecture">住宅建築・リフォーム</a></li>
-                            <li class="nav-item"><a href="#corporate-new-construction">法人新築・リフォーム</a></li>
-                            <li class="nav-item"><a href="#public works">公共工事</a></li>
+                            <ul>
+                                <li class="nav-item"><a href="#residential-architecture">
+                                        <p>住宅建築 <span>・</span><br class="tab-brake">リフォーム</p>
+                                    </a></li>
+                                <li class="nav-item"><a href="#corporate-profile">
+                                        <p>法人新築 <span>・</span><br class="tab-brake">リフォーム</p>
+                                    </a></li>
+                                <li class="nav-item"><a href="#public-works">
+                                        <p>公共工事</p>
+                                    </a></li>
+                            </ul>
                         </nav>
                     </div>
                 </section>
@@ -232,7 +241,7 @@
                 </section>
 
                 <section id="contact">
-                    <div class="wrapper contact__wrapper">
+                    <div class="contact__wrapper">
                         <div class="flex-box">
                             <div class="contact__left">
                                 <div class="contact__upper">
@@ -243,11 +252,11 @@
                                 </div>
                                 <div class="contact__lower flex-box-center">
                                     <div class="contact__tel-text">
-                                        <p class="contact__big">Tel</p>
+                                        <p class="contact__big ---01">Tel</p>
                                         <p class="contact__small">お電話</p>
                                     </div>
                                     <div class="contact__tel-text">
-                                        <a class="contact__big" href="tel:000-0000-0000">000-0000-0000</a>
+                                        <a class="contact__big ---02" href="tel:0000-000-0000">0000-000-0000</a>
                                         <p class="contact__small">営業時間10:00~20:00</p>
                                     </div>
                                     <div class="contact__btn more-btn">
@@ -276,26 +285,34 @@
                                 <a href="../index.html"><img src="../img/logo-pc.svg" alt="青牡丹工務店"></a>
                             </div>
                             <div class="footer__text-box">
-                                <p class="footer__adress">〒000-0000<span>大阪府大阪市中央区北区南町5-6-7</span></p>
-                                <p class="footer__open-time">営業時間<span>10:00~20:00</span></p>
-                                <p class="footer__vacation">定休日<span>日曜日、祝日、年末年始（12月31日から1月3日まで）</span></p>
+                                <div class="footer__adress">
+                                    <p class="text-left">〒000-0000　<br class="tab-brake">大阪府大阪市中央区北区南町5-6-7</p>
+                                </div>
+                                <div class="footer__open-time flex-box-center">
+                                    <p class="text-left">営業時間</p>
+                                    <p class="text-right">10:00~20:00</p>
+                                </div>
+                                <div class="footer__vacation flex-box-center">
+                                    <p class="text-left">定休日</p>
+                                    <p class="text-right">日曜日、祝日、年末年始（12月31日から1月3日まで）</p>
+                                </div>
                             </div>
                         </div>
                         <nav class="footer__nav">
                             <li class="footer__item flex-box-center">
                                 <a href="../index.html">トップページ</a>
-                                <a href="../about/index.html">私たちについて</a>
+                                <a href="../about/index.html">私達について</a>
                                 <a href="../about/index.html#management-philosophy">経営理念</a>
                             </li>
                             <li class="footer__item flex-box-center">
                                 <a href="../about/index.html#corporate-profile">会社概要</a>
                                 <a href="../about/index.html#safety-initiatives">安全への取り組み</a>
-                                <a href="index.html">事業内容</a>
-                                <a href="#residential-architecture">住宅建築・リフォーム</a>
+                                <a href="service/index.html">事業内容</a>
+                                <a href="service/index.html#residential-architecture">住宅建築・リフォーム</a>
                             </li>
                             <li class="footer__item flex-box-center">
-                                <a href="#corporate-profile">法人新築・リフォーム</a>
-                                <a href="#public works">公共工事</a>
+                                <a href="service/index.html#corporate-profile">法人新築・リフォーム</a>
+                                <a href="service/index.html#public-works">公共工事</a>
                                 <a href="../index.html#news">お知らせ</a>
                                 <a class="main-icon" href="../contact/index.html"><img src="../img/mail_icon.svg"
                                         alt="メールアイコン">お問い合わせ</a>
@@ -303,7 +320,7 @@
                         </nav>
                     </div>
                     <div class="copyright">
-                        <p class="copyright__text">&copy;AOBOTAN INC.</p>
+                        <p class="copyright__text">&copy; AOBOTAN INC.</p>
                     </div>
                 </div>
             </footer>

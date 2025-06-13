@@ -6,16 +6,26 @@
 .swiper {
     max-width: 1160px;
     width: 100%;
-    margin-top: 989px;
+    max-width: 1160px;
+    width: 100%;
+    margin-top: 116px;
     background-color: $bg-color;
+
+    @include sp{
+        margin-top: 73px;
+    }
 }
 
 .swiper-wrapper {
     margin: 63px 0 63px 48px;
     transition-timing-function: linear;
+
+    @include sp{
+        margin: 16px 0 58px 19px;
+    }
+
 }
 
-/* 画像のサイズ調整 */
 .swiper-slide img {
     height: auto;
     max-width: 360px;

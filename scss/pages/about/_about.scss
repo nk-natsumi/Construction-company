@@ -4,10 +4,24 @@
     about
 *******************/
 
-.section__title {
-    font-size: 32px;
-    font-weight: bold;
+.section__top {
+    padding-top: 40px;
+
+    .flex-box {
+        gap: calc((116/953)*100%);
+        margin-top: 64px;
+
+        @include sp {
+            flex-direction: column;
+            position: relative;
+        }
+    }
 }
+
+.page__nav ul{
+    margin-top: 58px;
+}
+
 
 #management-philosophy {
     margin-top: 80px;
@@ -25,6 +39,11 @@
     .flex-box {
         justify-content: space-between;
         margin-top: 64px;
+        gap: 30px;
+
+        @include tab {
+            flex-direction: column;
+        }
     }
 }
 
@@ -32,11 +51,23 @@
     line-height: 1.8;
     max-width: 465px;
     width: 100%;
+
+    @include tab {
+        order: 2;
+        margin-top: 20px;
+        max-width: 100%;
+    }
 }
 
 .corporate__img-box {
     max-width: 331px;
     width: 100%;
+
+    @include tab {
+        order: 1;
+        text-align: center;
+        max-width: 100%;
+    }
 }
 
 .post {
@@ -46,17 +77,23 @@
 .name {
     font-size: 32px;
     color: $sab-color;
+    margin-top: 24px;
     font-weight: bold;
 }
 
 .corporate-profile__box {
-    margin-top: 82px;
+    margin-top: 52px;
 
     .flex-box-center {
         border-bottom: 1px solid $line-color;
         padding: 30px 0;
         gap: calc((162/953)*100%);
         align-items: center;
+
+        @include sp {
+            line-height: 1.5;
+            gap: calc((40/375)*100%);
+        }
     }
 }
 
@@ -66,39 +103,68 @@
     font-weight: bold;
 }
 
-#safety-initiatives{
+#safety-initiatives {
     margin-top: 56px;
 
 }
 
 .safety__content{
-    margin-top: 56px;
+    margin-top: 86px;
 
-    .flex-box{
-        margin-top: 31px;
-        gap: calc((44/953)*100%);
+    @include sp {
+        margin-top: 0;
     }
 }
 
+.safety__item {
 
-.safety__title{
+    .flex-box {
+        margin-top: 25px;
+        gap: calc((44/953)*100%);
+
+        @include tab {
+            flex-direction: column;
+        }
+    }
+}
+
+.safety__title {
     margin-top: 30px;
     font-size: 24px;
     font-weight: bold;
     line-height: 1.8;
+
+    @include sp {
+        font-size: 20px;
+        margin-top: 55px;
+    }
+
+
 }
 
-.safety__text{
+.safety__text {
     max-width: 642px;
+    min-width: 300px;
     width: 100%;
     line-height: 1.8;
+
+    @include tab {
+        order: 2;
+        max-width: 100%;
+        margin-top: 30px;
+    }
 }
 
-.safety__img{
+.safety__img {
     max-width: 267px;
     width: 100%;
+
+    @include tab {
+        order: 1;
+        max-width: 100%;
+    }
 }
 
-#contact{
+#contact {
     margin-top: 193px;
 }

@@ -1,0 +1,66 @@
+@use '../../base/_setting' as *;
+
+/*****************
+    tthanks
+*******************/
+
+
+
+.form__label-left01 {
+    color: $sab-color;
+}
+
+.form__label-right02 {
+    color: #fff;
+    background-color: $sab-color;
+}
+
+.thanks-btn {
+    a {
+        display: inline-block;
+        box-sizing: border-box;
+        max-width: 286px;
+        margin: 91px 0 0;
+    padding: 19px 70px;
+        width: 100%;
+        background-color: $sab-color;
+        border: 1px solid $sab-color;
+        border-radius: 10px;
+        font-weight: bold;
+        color: #fff;
+        position: relative;
+        font-size: 16px;
+
+        &:hover {
+            background-color: #fff;
+            color: $sab-color;
+            transition: 0.8s;
+
+            &::after {
+                color: $sab-color;
+            }
+        }
+
+        &::after {
+            content: "⚫︎";
+            color: #fff;
+            width: 10px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 25px;
+        }
+    }
+
+
+    @include tab {
+        text-align: center;
+    }
+}
+
+
+
+
+#contact {
+    margin-top: 170px;
+}

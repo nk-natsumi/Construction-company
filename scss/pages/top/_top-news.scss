@@ -5,14 +5,26 @@
 
 #news {
     margin-top: 107px;
+
+    @include sp {
+        margin-top: 85px;
+    }
 }
 
 .news__title {
     max-width: 340px;
+
+    @include sp {
+        max-width: 192px;   
+    }
 }
 
 .news__content {
-    margin-top: 48px;
+    margin-top: 40px;
+
+    @include sp {
+        margin-top: 50px;  
+    }
 }
 
 .news__item {
@@ -22,21 +34,27 @@
         border-bottom: 1px solid $sab-color;
         position: relative;
 
+        @include sp {
+            padding: 15px 0;
+        }
+
         &::after {
             content: "";
             width: 8px;
             height: 8px;
             border: 0;
             border-top: solid 4px $sab-color;
-            ;
             border-right: solid 4px $sab-color;
-            ;
             transform: rotate(45deg);
             position: absolute;
             top: 0;
-            right: 27px;
+            right: calc((27/1120)*100%);
             bottom: 0;
             margin: auto;
+
+            @include tab{
+                right: calc((8/375)*100%);
+            }
         }
     }
 
@@ -52,11 +70,15 @@
 }
 
 .news__category {
+    box-sizing: border-box;
+    max-width: 116px;
+    width: 100%;
     font-size: 14px;
-    padding: 5px 16px;
+    padding: 4px 0;
     font-weight: bold;
     border: solid 1px $sab-color;
     color: $sab-color;
+    text-align: center;
 }
 
 .news__time {
@@ -68,6 +90,19 @@
 .news__text {
     margin-top: 24px;
     font-weight: bold;
+    padding-right: 37px;
+
+    @include sp {
+        width: 100%;
+        margin-top: 16px;
+        font-size: 14px;
+    }
+}
+
+.news-1{
+    @include tab{
+        line-height: 1.8;
+    }
 }
 
 
@@ -83,7 +118,7 @@
 #modal-1,
 #modal-2,
 #modal-3 {
-   display: none;
+    display: none;
 }
 
 #modal-1.is-open,
@@ -98,7 +133,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 2;
+    z-index: 6;
     background: rgba(0, 0, 0, 0.6);
     display: flex;
     justify-content: center;
@@ -121,7 +156,7 @@
 
     &::before {
         content: "×";
-        font-size: 32px;
+        font-size: 50px;
         font-weight: bold;
         line-height: 1;
         width: 32px;
@@ -140,6 +175,7 @@
         }
 
         @include sp {
+            font-size: 36px;
             top: 3px;
             right: 3px;
         }
@@ -155,7 +191,13 @@
     width: 100%;
     overflow-y: auto;
     box-sizing: border-box;
-    max-height: 90vh;
+    max-height: 88vh;
+
+    @include sp {
+        max-width: 700px;
+        padding-left: calc((102/700)*100%);
+        padding-right: calc((102/700)*100%);
+    }
 }
 
 .modal__title {
@@ -163,6 +205,10 @@
     font-weight: bold;
     line-height: 1.8;
     margin-top: 16px;
+
+    @include sp {
+        font-size: 20px;
+    }
 }
 
 .modal__img {
@@ -173,13 +219,17 @@
     margin-top: 6.2px;
     line-height: 1.8;
 
+    @include sp {
+        font-size: 14px;
+    }
+
     p {
         margin-top: 28.8px;
     }
 
 
     li::before {
-        content: "•"; 
+        content: "•";
         font-weight: normal;
         margin-right: 0.5em;
         display: inline-block;
