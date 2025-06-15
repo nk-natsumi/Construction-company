@@ -134,6 +134,13 @@
     bottom: calc((24/889)*100%);
     left: calc((18/1160)*100%);
 
+
+    @include tab {
+        left: calc((10/375)*100%);
+        bottom: calc((5/889)*100%);
+    }
+
+
     @include sp {
         left: calc((19/375)*100%);
         bottom: calc((55/889)*100%);
@@ -154,6 +161,11 @@
             left: 50%;
             transform: translateX(-50%) rotate(90deg);
             bottom: -64px;
+
+            @include tab {
+                width: 62px;
+                bottom: -34px;
+            }
 
             @include sp {
                 width: 52px;

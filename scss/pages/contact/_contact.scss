@@ -270,6 +270,11 @@
         font-size: 32px;
         display: block;
         margin-top: 29px;
+
+        &:hover{
+            opacity: 0.5;
+            transition: 0.6s;
+        }
     }
 
     .tel-open {

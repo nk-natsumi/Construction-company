@@ -3,7 +3,7 @@
     footer
 **************************/
 
-.footer {
+#footer {
     margin-top: 115px;
     padding-bottom: 26px;
 
@@ -118,6 +118,10 @@
         }
 
         a {
+            &:hover{
+                opacity: 0.4;
+                transition: 0.6s;
+            }
             @include tab {
                 margin-top: 32px;
             }

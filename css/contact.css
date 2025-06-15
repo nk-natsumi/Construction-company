@@ -242,6 +242,10 @@
   display: block;
   margin-top: 29px;
 }
+.form__tel a:hover {
+  opacity: 0.5;
+  transition: 0.6s;
+}
 .form__tel .tel-open {
   margin-top: 14px;
   font-size: 12px;

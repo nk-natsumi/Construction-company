@@ -1,36 +1,78 @@
+// メニューの開閉
 $(document).ready(function () {
+    const isSPView = () => window.innerWidth <= 768;
+
+    function getHeaderHeight() {
+        return isSPView() ? $(".header").outerHeight() : 0;
+    }
+
+    // ハンバーガーメニュー切り替え
     $(".menu-trigger").click(function () {
         $(this).toggleClass("active");
-        $(".header__nav,.header__item , .header__sp-menu .header__link-title  , .header__sub-menu , .header__item-more").toggleClass("active");
+        $(".header__nav").toggleClass("active");
+        $("body").toggleClass("active");
+    });
 
-    })
+    // ヘッダー内リンククリック処理
+    $(".header__item a").on("click", function (e) {
+        const href = $(this).attr("href");
+        const isAnchor = href.startsWith("#") || href.startsWith(location.pathname + "#") || href.startsWith("./#");
 
+        if (isAnchor) {
+            e.preventDefault();
 
-    /* ナビリンククリックでスクロール＆メニューを閉じる */
+            const anchorId = href.split("#")[1];
+            const target = $("#" + anchorId);
+
+            if (target.length) {
+                $("html, body").animate({
+                    scrollTop: target.offset().top - getHeaderHeight()
+                }, 600);
+            }
+
+            $(".menu-trigger, .header__nav, body").removeClass("active");
+        }
+    });
+
+    // ロード時のハッシュスクロール
+    $(window).on("load", function () {
+        const hash = location.hash;
+
+        if (hash) {
+            $("html, body").scrollTop(0);
+
+            setTimeout(function () {
+                const target = $(hash);
+                if (target.length) {
+                    $("html, body").animate({
+                        scrollTop: target.offset().top - getHeaderHeight()
+                    }, 600);
+                }
+            }, 100);
+        }
+    });
+
+    // ページナビリンククリック時のスクロール
     $(".page__nav a").click(function (e) {
         const targetId = $(this).attr("href");
         const target = $(targetId);
 
         if (target.length) {
             e.preventDefault();
-            $("html, body").animate(
-                {
-                    scrollTop: target.offset().top
-                },
-                600
-            );
+            $("html, body").animate({
+                scrollTop: target.offset().top - getHeaderHeight()
+            }, 600);
         }
     });
 
-
-    /* スクロールでfade-in */
+    // スクロールでフェードイン
     $(window).on("scroll", function () {
         $(".fade-in-up").each(function () {
-            const elemPos = $(this).offset().top;
+            const elemTop = $(this).offset().top;
             const scroll = $(window).scrollTop();
             const windowHeight = $(window).height();
 
-            if (scroll > elemPos - windowHeight + 200) {
+            if (scroll > elemTop - windowHeight + 250) {
                 $(this).addClass("active");
             }
         });
@@ -38,42 +80,44 @@ $(document).ready(function () {
 
     $(window).trigger("scroll");
 
+    // スクロールダウンボタン
+    $('.scroll-down').on('click', function (e) {
+        const target = $($(this).attr('href'));
+        if (target.length) {
+            $('html, body').animate({
+                scrollTop: target.offset().top - getHeaderHeight()
+            }, 600);
+        }
+    });
 
-
-
+    // Swiper 初期化
     const swiper = new Swiper(".swiper", {
-        loop: true, // ループ有効
-        slidesPerView: 1.8, // 一度に表示する枚数
-        speed: 6000, // ループの時間
+        loop: true,
+        slidesPerView: 1.8,
+        speed: 6000,
         spaceBetween: 16,
-        allowTouchMove: false, // スワイプ無効
+        allowTouchMove: false,
         autoplay: {
-            delay: 0, // 途切れなくループ
+            delay: 0
         },
-
-
         breakpoints: {
             767: {
                 slidesPerView: 2.25,
-                spaceBetween: 24,
+                spaceBetween: 24
             },
-
             1024: {
                 slidesPerView: 2.75,
-                spaceBetween: 48,
+                spaceBetween: 48
             }
         }
     });
 
-
-
-    // レスポンシブの375px未満のviewport画面幅を固定
+    // viewport幅固定処理
     const viewport = document.querySelector('meta[name="viewport"]');
     function switchViewport() {
-        const value =
-            window.outerWidth > 375
-                ? 'width=device-width,initial-scale=1'
-                : 'width=375';
+        const value = window.outerWidth > 375
+            ? 'width=device-width,initial-scale=1'
+            : 'width=375';
         if (viewport.getAttribute('content') !== value) {
             viewport.setAttribute('content', value);
         }
@@ -81,56 +125,17 @@ $(document).ready(function () {
     addEventListener('resize', switchViewport, false);
     switchViewport();
 
-
-    /* モーダル */
+    // モーダル初期化
     MicroModal.init({
         openClass: 'is-open',
         disableScroll: true,
         onShow: (modal) => {
             const container = modal.querySelector('.modal__container');
-            if (container) {
-                container.scrollTop = 0;
-            }
+            if (container) container.scrollTop = 0;
         }
     });
 
-});
-
-
-
-// セッションストレージからフラグを取得
-const isFirstLoad = sessionStorage.getItem('isFirstLoad');
-
-// ページの読み込みが完了したときに実行される関数
-window.addEventListener('load', function () {
-    // フラグが 'true' でない場合（初回アクセス時またはフラグが削除された場合）
-    if (isFirstLoad !== 'true') {
-        // ローディング画面を表示
-        const loadingElement = document.querySelector('.loading');
-        loadingElement.classList.add('active');
-
-        // 2秒後にローディング画面を非表示にする
-        setTimeout(function () {
-            // ローディング画面を非表示にする
-            loadingElement.classList.remove('active');
-            // コンテンツ要素を表示
-            const contentsElement = document.querySelector('.contents.hidden');
-            contentsElement.classList.remove('hidden'); // hiddenクラスを取り除くことでコンテンツを表示
-            // セッションストレージにフラグを保存
-            sessionStorage.setItem('isFirstLoad', 'true');
-        }, 2000);
-        setTimeout(function () {
-            loadingElement.style.display = 'none'; // 非表示にする
-        }, 2500);
-    } else {
-        // 2回目以降のアクセス時の処理を記述
-        // コンテンツ要素を表示
-        const contentsElement = document.querySelector('.contents.hidden');
-        contentsElement.classList.remove('hidden'); // hiddenクラスを取り除くことでコンテンツを表示
-    }
-});
-
-$(document).ready(function () {
+    // お問い合わせフォームバリデーション
     const $form = $('.contact__form');
     const $submitBtn = $('#submit');
 
@@ -143,11 +148,27 @@ $(document).ready(function () {
         const isAddressFilled = $form.find('input[name="address"]').val().trim() !== '';
         const isChecked = $('#confirmationCheck').is(':checked');
 
-        if (isRadioChecked && isTextFilled && isEmailFilled && isAddressFilled && isChecked) {
-            $submitBtn.prop('disabled', false);
-        } else {
-            $submitBtn.prop('disabled', true);
-        }
+        $submitBtn.prop('disabled', !(isRadioChecked && isTextFilled && isEmailFilled && isAddressFilled && isChecked));
     });
 });
 
+// ローディング画面表示（初回のみ）
+window.addEventListener('load', function () {
+    const isFirstLoad = sessionStorage.getItem('isFirstLoad');
+    const loadingElement = document.querySelector('.loading');
+    const contentsElement = document.querySelector('.contents.hidden');
+
+    if (isFirstLoad !== 'true') {
+        loadingElement.classList.add('active');
+        setTimeout(() => {
+            loadingElement.classList.remove('active');
+            contentsElement.classList.remove('hidden');
+            sessionStorage.setItem('isFirstLoad', 'true');
+        }, 2000);
+        setTimeout(() => {
+            loadingElement.style.display = 'none';
+        }, 2500);
+    } else {
+        contentsElement.classList.remove('hidden');
+    }
+});
