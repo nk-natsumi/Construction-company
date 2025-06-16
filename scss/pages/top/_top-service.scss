@@ -172,7 +172,7 @@
 .service__content-title {
     display: inline;
     width: 100%;
-    font-size: 24px;
+    font-size: 1.5rem;
     background-color: #fff;
     padding: 10px 16px;
     font-weight: bold;
@@ -182,7 +182,7 @@
 
     margin-top: 10px;
 
-    @include sp{
+    @include sp {
         margin-top: 0;
     }
 

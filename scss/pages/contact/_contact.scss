@@ -38,7 +38,7 @@
         margin: 0 auto;
     }
 
-    @include sp{
+    @include sp {
         max-width: 470px;
         width: 100%;
     }
@@ -63,7 +63,7 @@
 }
 
 .label-namber {
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .label-text {
@@ -126,7 +126,7 @@
         &::placeholder {
             color: #C2C2C2;
             font-weight: bold;
-            font-size: 16px;
+            font-size: 1rem;
             font-family: "Zen Kaku Gothic New";
         }
     }
@@ -145,13 +145,13 @@
 
     p {
         margin-left: 20px;
-        font-size: 12px;
+        font-size: 0.75rem;
         position: relative;
 
         &::before {
             content: "★";
             color: #FE0000;
-            font-size: 12px;
+            font-size: 0.75rem;
             position: absolute;
             bottom: 0;
             left: -12px;
@@ -229,9 +229,9 @@
         color: #fff;
         padding: 19px 82px;
         position: relative;
-        font-size: 16px;
+        font-size: 1rem;
 
-        &:hover{
+        &:hover {
             background-color: #fff;
             color: $sab-color;
             transition: 0.8s;
@@ -267,11 +267,11 @@
         font-family: $sab-font;
         color: $main-color;
         font-weight: normal;
-        font-size: 32px;
+        font-size: 2rem;
         display: block;
         margin-top: 29px;
 
-        &:hover{
+        &:hover {
             opacity: 0.5;
             transition: 0.6s;
         }
@@ -279,7 +279,7 @@
 
     .tel-open {
         margin-top: 14px;
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 }
 

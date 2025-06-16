@@ -81,14 +81,14 @@
 
     @include tab {
         max-width: 360px;
-        font-size: 12px;
+        font-size: 0.75rem;
         top: calc((500/733)*100%);
         right: calc((50/744)*100%);
     }
 
     @include sp {
         top: calc((408/589)*100%);
-        left:  calc((19/375)*100%);
+        left: calc((19/375)*100%);
         max-width: 348px;
         width: 100%;
     }
@@ -96,7 +96,7 @@
 
 .fv__title {
     /* clamp:(64px, 40px, 24px, 480px, 1280px; */
-    font-size: 64px;
+    font-size: 4rem;
     font-weight: bold;
     background-color: #fff;
     padding: 14px;
@@ -104,11 +104,11 @@
     display: inline-block;
 
     @include pc-s {
-        font-size: 40px;
+        font-size: 2.5rem;
     }
 
     @include tab {
-        font-size: 24px;
+        font-size: 1.5rem;
         padding: 14px 13px;
     }
 }
@@ -124,7 +124,7 @@
 
     @include sp {
         margin-top: 21px;
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 }
 
@@ -149,7 +149,7 @@
     a {
         position: relative;
         color: $sab-color;
-        font-size: 10px;
+        font-size: 0.625rem;
         font-weight: bold;
 
         &::after {

@@ -51,7 +51,7 @@
     }
 
     @include sp {
-        font-size: 12px;
+        font-size: 0.75rem;
         margin-top: 25px;
 
     }
@@ -157,7 +157,7 @@
 .copyright {
     margin-top: 7px;
     text-align: end;
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-right: 16px;
 
     @include tab {
@@ -165,7 +165,7 @@
     }
 
     @include sp {
-        font-size: 12px;
+        font-size: 0.75rem;
         margin-top: 56px;
         text-align: center;
         margin-right: 0;

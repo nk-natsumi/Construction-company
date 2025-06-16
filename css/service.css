@@ -47,7 +47,7 @@
 }
 
 .works__title {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-top: 56px;
   padding-bottom: 39px;
@@ -55,7 +55,7 @@
 }
 @media screen and (max-width: 767px) {
   .works__title {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 }
 
@@ -84,14 +84,14 @@
 }
 
 .works__text-left {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
   width: 43.488372093%;
 }
 @media screen and (max-width: 767px) {
   .works__text-left {
     width: 100%;
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 
@@ -101,7 +101,7 @@
 @media screen and (max-width: 767px) {
   .works__text-right {
     width: 100%;
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-top: 20px;
   }
 }
@@ -113,7 +113,7 @@
 @media screen and (max-width: 767px) {
   .case-study {
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 0.875rem;
     flex-wrap: wrap;
   }
 }
@@ -140,7 +140,7 @@
 
 .case-study__text {
   margin-top: 20px;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 @media screen and (max-width: 767px) {
   .case-study__text {

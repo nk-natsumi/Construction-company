@@ -65,11 +65,11 @@
 
 
 .header__item {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
 
     @include sp {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     &:hover {
@@ -137,7 +137,7 @@
 
 .header__sub-menu {
     display: none;
-    font-size: 14px;
+    font-size: 0.875rem;
     border-bottom: solid 1px $line-color;
     padding: 32px 0 32px 17px;
 
@@ -145,16 +145,10 @@
         margin-top: 32px;
         padding: 0;
         display: block;
-        font-size: 16px;
+        font-size: 1rem;
         border-bottom: none;
     }
 
-    /* 
-    &.active {
-        font-size: 16px;
-        border-bottom: none;
-    }
- */
     a {
         display: block;
     }
@@ -171,7 +165,6 @@
 .header__item-more {
     border-bottom: solid 1px $line-color;
 
-    /* &.active  */
     @include sp {
         border-bottom: none;
         margin: 30px auto 0;
@@ -179,7 +172,6 @@
 }
 
 .header__news {
-
     padding: 32px 0;
 
     @include sp {
@@ -225,7 +217,7 @@
 
 .header__copyright {
     font-weight: normal;
-    font-size: 12px;
+    font-size: 0.75rem;
     margin-top: 26px;
 }
 

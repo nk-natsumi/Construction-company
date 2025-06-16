@@ -45,7 +45,7 @@
     margin-top: 40px;
 
     @include sp {
-        font-size: 14px;
+        font-size: 0.875rem;
         margin-top: 45px;
     }
 
@@ -88,7 +88,7 @@
 }
 
 .about__slogan {
-    font-size: 40px;
+    font-size: 2.5rem;
     background-color: $bg-color;
     padding: 26px 34px 0 40px;
     writing-mode: vertical-rl;
@@ -104,7 +104,7 @@
     .text-shadow {
         text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
         margin-right: 16px;
-        
+
     }
 
     @include pc-s {
@@ -112,14 +112,14 @@
     }
 
     @include tab {
-        font-size: 36px;
+        font-size: 2.25rem;
         padding: 26px 26px 0 30px;
         margin-top: -230px;
         right: 0;
     }
 
     @include sp {
-        font-size: 24px;
+        font-size: 1.5rem;
         letter-spacing: 12px;
         padding: 26px 24px 5px;
         margin-right: 7px;

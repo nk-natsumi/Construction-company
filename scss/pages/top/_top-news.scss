@@ -15,7 +15,7 @@
     max-width: 340px;
 
     @include sp {
-        max-width: 192px;   
+        max-width: 192px;
     }
 }
 
@@ -23,7 +23,7 @@
     margin-top: 40px;
 
     @include sp {
-        margin-top: 50px;  
+        margin-top: 50px;
     }
 }
 
@@ -38,7 +38,7 @@
             padding: 15px 0;
         }
 
-        &:hover{
+        &:hover {
             opacity: 0.4;
             transition: 0.6s;
         }
@@ -57,7 +57,7 @@
             bottom: 0;
             margin: auto;
 
-            @include tab{
+            @include tab {
                 right: calc((8/375)*100%);
             }
         }
@@ -78,7 +78,7 @@
     box-sizing: border-box;
     max-width: 116px;
     width: 100%;
-    font-size: 14px;
+    font-size: 0.875rem;
     padding: 4px 0;
     font-weight: bold;
     border: solid 1px $sab-color;
@@ -87,7 +87,7 @@
 }
 
 .news__time {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: bold;
     color: $sab-color;
 }
@@ -100,12 +100,12 @@
     @include sp {
         width: 100%;
         margin-top: 16px;
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 }
 
-.news-1{
-    @include tab{
+.news-1 {
+    @include tab {
         line-height: 1.8;
     }
 }
@@ -161,7 +161,7 @@
 
     &::before {
         content: "×";
-        font-size: 50px;
+        50px;
         font-weight: bold;
         line-height: 1;
         width: 32px;
@@ -180,7 +180,7 @@
         }
 
         @include sp {
-            font-size: 36px;
+            font-size: 2.25rem;
             top: 3px;
             right: 3px;
         }
@@ -206,13 +206,13 @@
 }
 
 .modal__title {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
     line-height: 1.8;
     margin-top: 16px;
 
     @include sp {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 }
 
@@ -225,7 +225,7 @@
     line-height: 1.8;
 
     @include sp {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     p {
@@ -256,12 +256,12 @@
     position: relative;
 
 
-    &:hover{
+    &:hover {
         background-color: $main-color;
         color: #FFF;
         transition: all 0.8s;
 
-        &::after{
+        &::after {
             color: #FFF;
         }
     }

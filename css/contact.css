@@ -67,7 +67,7 @@
 }
 
 .label-namber {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .label-text {
@@ -121,7 +121,7 @@
 .form__item input::placeholder {
   color: #C2C2C2;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1rem;
   font-family: "Zen Kaku Gothic New";
 }
 
@@ -135,13 +135,13 @@
 }
 .required-item p {
   margin-left: 20px;
-  font-size: 12px;
+  font-size: 0.75rem;
   position: relative;
 }
 .required-item p::before {
   content: "★";
   color: #FE0000;
-  font-size: 12px;
+  font-size: 0.75rem;
   position: absolute;
   bottom: 0;
   left: -12px;
@@ -204,7 +204,7 @@
   color: #fff;
   padding: 19px 82px;
   position: relative;
-  font-size: 16px;
+  font-size: 1rem;
 }
 .form__btn button:hover {
   background-color: #fff;
@@ -238,7 +238,7 @@
   font-family: "Kanit";
   color: #000000;
   font-weight: normal;
-  font-size: 32px;
+  font-size: 2rem;
   display: block;
   margin-top: 29px;
 }
@@ -248,7 +248,7 @@
 }
 .form__tel .tel-open {
   margin-top: 14px;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 #contact {
