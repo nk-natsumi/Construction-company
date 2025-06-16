@@ -7,10 +7,12 @@
 .section__top {
   padding-top: 40px;
 }
+
 .section__top .flex-box {
   gap: 12.1720881427%;
   margin-top: 54px;
 }
+
 @media screen and (max-width: 767px) {
   .section__top .flex-box {
     flex-direction: column;
@@ -29,6 +31,7 @@
 .works {
   margin-top: 72px;
 }
+
 @media screen and (max-width: 767px) {
   .works {
     margin-top: 100px;
@@ -40,6 +43,7 @@
   width: 100%;
   margin-left: 50px;
 }
+
 @media screen and (max-width: 1280px) {
   .works__inner {
     margin: 0 auto;
@@ -53,6 +57,7 @@
   padding-bottom: 39px;
   border-bottom: solid 1px #B1C6DC;
 }
+
 @media screen and (max-width: 767px) {
   .works__title {
     font-size: 1.125rem;
@@ -66,6 +71,7 @@
   align-items: stretch;
   min-height: 203px;
 }
+
 @media screen and (max-width: 767px) {
   .works__text-box {
     flex-direction: column;
@@ -88,9 +94,10 @@
   font-weight: bold;
   width: 43.488372093%;
 }
+
 @media screen and (max-width: 767px) {
   .works__text-left {
-    width: 100%;
+    font-size: 1.25rem;
     font-size: 1rem;
   }
 }
@@ -98,6 +105,7 @@
 .works__text-right {
   width: 51.8604651163%;
 }
+
 @media screen and (max-width: 767px) {
   .works__text-right {
     width: 100%;
@@ -110,6 +118,7 @@
   gap: 7.2093023256%;
   margin-top: 88px;
 }
+
 @media screen and (max-width: 767px) {
   .case-study {
     margin-top: 20px;
@@ -121,6 +130,7 @@
 .case-study__title {
   font-weight: bold;
 }
+
 @media screen and (max-width: 767px) {
   .case-study__title {
     margin-top: 30px;
@@ -131,6 +141,7 @@
   margin-top: 20px;
   max-width: 352px;
 }
+
 @media screen and (max-width: 767px) {
   .case-study__img {
     margin-top: 10px;
@@ -142,6 +153,7 @@
   margin-top: 20px;
   font-size: 0.875rem;
 }
+
 @media screen and (max-width: 767px) {
   .case-study__text {
     margin-top: 10px;
@@ -150,4 +162,6 @@
 
 #contact {
   margin-top: 72px;
-}/*# sourceMappingURL=service.css.map */
+}
+
+/*# sourceMappingURL=service.css.map */

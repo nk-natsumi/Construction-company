@@ -135,7 +135,8 @@ $(document).ready(function () {
         }
     });
 
-    // お問い合わせフォームバリデーション
+});
+$(document).ready(function () {
     const $form = $('.contact__form');
     const $submitBtn = $('#submit');
 
@@ -148,7 +149,11 @@ $(document).ready(function () {
         const isAddressFilled = $form.find('input[name="address"]').val().trim() !== '';
         const isChecked = $('#confirmationCheck').is(':checked');
 
-        $submitBtn.prop('disabled', !(isRadioChecked && isTextFilled && isEmailFilled && isAddressFilled && isChecked));
+        if (isRadioChecked && isTextFilled && isEmailFilled && isAddressFilled && isChecked) {
+            $submitBtn.prop('disabled', false);
+        } else {
+            $submitBtn.prop('disabled', true);
+        }
     });
 });
 
