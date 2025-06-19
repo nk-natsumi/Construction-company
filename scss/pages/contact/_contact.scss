@@ -231,11 +231,17 @@
         position: relative;
         font-size: 1rem;
         cursor: pointer;
+        transition: 0.3s;
+
+        &:disabled{
+            pointer-events: none;
+            opacity: 1;
+            
+        }
 
         &:hover {
             background-color: #fff;
             color: $sab-color;
-            transition: 0.8s;
 
             &::after {
                 color: $sab-color;
@@ -271,10 +277,10 @@
         font-size: 2rem;
         display: block;
         margin-top: 29px;
+        transition: 0.3s;
 
         &:hover {
             opacity: 0.5;
-            transition: 0.6s;
         }
     }
 
@@ -284,6 +290,6 @@
     }
 }
 
-#contact {
+.contact {
     margin-top: 69px;
 }

@@ -90,14 +90,15 @@ li {
         background-color: #FFF;
         border-radius: 10px;
         font-weight: bold;
-        padding: 21px 80px;
+        padding: 21px 0px;
         position: relative;
+        text-align: center;
+        transition: all 0.3s;
 
 
         &:hover {
             background-color: $main-color;
             color: #FFF;
-            transition: all 0.8s;
 
             &::after {
                 color: #FFF;
@@ -112,6 +113,7 @@ li {
             top: 50%;
             transform: translateY(-50%);
             right: 20px;
+            transition: all 0.3s;
         }
     }
 }
@@ -295,12 +297,12 @@ li {
         padding-bottom: 34px;
         text-align: center;
         position: relative;
+        transition: all 0.3s;
 
 
         &:hover {
             background-color: $sab-color;
             color: #FFF;
-            transition: all 0.5s;
 
             &::after {
                 border-top: solid 2px #fff;
@@ -320,7 +322,7 @@ li {
             left: 50%;
             transform: translateX(-50%) rotate(135deg);
             margin: auto;
-
+            transition: all 0.3s;
 
         }
     }

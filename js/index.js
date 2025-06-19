@@ -34,6 +34,17 @@ $(document).ready(function () {
         }
     });
 
+
+    $('.header__link-group').hover(
+        function () {
+            $(this).find('.header__sub-menu').stop(true, true).slideDown(600);
+        },
+        function () {
+            $(this).find('.header__sub-menu').stop(true, true).slideUp(600);
+        }
+    );
+
+
     // ロード時のハッシュスクロール
     $(window).on("load", function () {
         const hash = location.hash;
@@ -136,6 +147,7 @@ $(document).ready(function () {
     });
 
 });
+
 $(document).ready(function () {
     const $form = $('.contact__form');
     const $submitBtn = $('#submit');
@@ -177,3 +189,6 @@ window.addEventListener('load', function () {
         contentsElement.classList.remove('hidden');
     }
 });
+
+
+

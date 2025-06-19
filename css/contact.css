@@ -205,11 +205,16 @@
   padding: 19px 82px;
   position: relative;
   font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.form__btn button:disabled {
+  pointer-events: none;
+  opacity: 1;
 }
 .form__btn button:hover {
   background-color: #fff;
   color: #4282B8;
-  transition: 0.8s;
 }
 .form__btn button:hover::after {
   color: #4282B8;
@@ -241,16 +246,16 @@
   font-size: 2rem;
   display: block;
   margin-top: 29px;
+  transition: 0.3s;
 }
 .form__tel a:hover {
   opacity: 0.5;
-  transition: 0.6s;
 }
 .form__tel .tel-open {
   margin-top: 14px;
   font-size: 0.75rem;
 }
 
-#contact {
+.contact {
   margin-top: 69px;
 }/*# sourceMappingURL=contact.css.map */

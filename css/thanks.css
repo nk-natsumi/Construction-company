@@ -28,11 +28,11 @@
   color: #fff;
   position: relative;
   font-size: 1rem;
+  transition: all 0.3s;
 }
 .thanks-btn a:hover {
   background-color: #fff;
   color: #4282B8;
-  transition: 0.8s;
 }
 .thanks-btn a:hover::after {
   color: #4282B8;
@@ -45,6 +45,7 @@
   top: 50%;
   transform: translateY(-50%);
   right: 25px;
+  transition: all 0.3s;
 }
 @media screen and (max-width: 1024px) {
   .thanks-btn {
@@ -52,6 +53,6 @@
   }
 }
 
-#contact {
+.contact {
   margin-top: 170px;
 }/*# sourceMappingURL=thanks.css.map */

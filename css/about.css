@@ -7,12 +7,10 @@
 .section__top {
   padding-top: 40px;
 }
-
 .section__top .flex-box {
   gap: 12.1720881427%;
   margin-top: 64px;
 }
-
 @media screen and (max-width: 767px) {
   .section__top .flex-box {
     flex-direction: column;
@@ -24,7 +22,7 @@
   margin-top: 58px;
 }
 
-#management-philosophy {
+.management-philosophy {
   margin-top: 80px;
 }
 
@@ -34,18 +32,16 @@
   width: 100%;
 }
 
-#corporate-profile {
+.corporate-profile {
   margin-top: 51px;
 }
-
-#corporate-profile .flex-box {
+.corporate-profile .flex-box {
   justify-content: space-between;
   margin-top: 64px;
   gap: 30px;
 }
-
 @media screen and (max-width: 1024px) {
-  #corporate-profile .flex-box {
+  .corporate-profile .flex-box {
     flex-direction: column;
   }
 }
@@ -55,7 +51,6 @@
   max-width: 465px;
   width: 100%;
 }
-
 @media screen and (max-width: 1024px) {
   .corporate__text {
     order: 2;
@@ -68,7 +63,6 @@
   max-width: 331px;
   width: 100%;
 }
-
 @media screen and (max-width: 1024px) {
   .corporate__img-box {
     order: 1;
@@ -91,14 +85,12 @@
 .corporate-profile__box {
   margin-top: 52px;
 }
-
 .corporate-profile__box .flex-box-center {
   border-bottom: 1px solid #B1C6DC;
   padding: 30px 0;
   gap: 16.9989506821%;
   align-items: center;
 }
-
 @media screen and (max-width: 767px) {
   .corporate-profile__box .flex-box-center {
     line-height: 1.5;
@@ -112,14 +104,13 @@
   font-weight: bold;
 }
 
-#safety-initiatives {
+.safety-initiatives {
   margin-top: 56px;
 }
 
 .safety__content {
   margin-top: 86px;
 }
-
 @media screen and (max-width: 767px) {
   .safety__content {
     margin-top: 0;
@@ -130,7 +121,6 @@
   margin-top: 25px;
   gap: 4.6169989507%;
 }
-
 @media screen and (max-width: 1024px) {
   .safety__item .flex-box {
     flex-direction: column;
@@ -143,7 +133,6 @@
   font-weight: bold;
   line-height: 1.8;
 }
-
 @media screen and (max-width: 767px) {
   .safety__title {
     font-size: 1.25rem;
@@ -157,8 +146,6 @@
   width: 100%;
   line-height: 1.8;
 }
-
-
 @media screen and (max-width: 1024px) {
   .safety__text {
     order: 2;
@@ -171,7 +158,6 @@
   max-width: 267px;
   width: 100%;
 }
-
 @media screen and (max-width: 1024px) {
   .safety__img {
     order: 1;
@@ -179,8 +165,6 @@
   }
 }
 
-#contact {
+.contact {
   margin-top: 193px;
-}
-
-/*# sourceMappingURL=about.css.map */
+}/*# sourceMappingURL=about.css.map */

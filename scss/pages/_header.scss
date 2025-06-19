@@ -22,9 +22,10 @@
     }
 
     a {
+        transition: 0.3s;
+
         &:hover {
             opacity: 0.6;
-            transition: 0.6s;
         }
     }
 
@@ -38,7 +39,6 @@
     @include sp {
         max-width: 98px;
     }
-
 
 }
 
@@ -73,9 +73,7 @@
     }
 
     &:hover {
-        .header__sub-menu {
-            display: block;
-        }
+        
 
         .header__link-title a::before {
             height: 0;
@@ -126,7 +124,7 @@
         top: 50%;
         right: 12px; // 横棒の中心に配置
         transform: translateY(-50%);
-        transition: 0.3s;
+        transition:  all 0.3s;
     }
 
     &:hover::before {
@@ -172,11 +170,15 @@
 }
 
 .header__news {
-    padding: 32px 0;
+    a {
+        display: block;
+        padding: 32px 0;
 
-    @include sp {
-        padding: 0;
+        @include sp {
+            padding: 0;
+        }
     }
+
 }
 
 .header__info {
@@ -233,7 +235,7 @@
     height: 48px;
     cursor: pointer;
     z-index: 998;
-    transition: all .5s;
+    transition: all 0.5s;
     background-color: $sab-color;
     padding: 12px;
     position: absolute;
@@ -249,7 +251,7 @@
         width: 32px;
         height: 1px;
         background-color: #fff;
-        transition: all .5s;
+        transition: all 0.5s;
     }
 
     span:nth-of-type(1) {
