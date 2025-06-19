@@ -34,6 +34,10 @@ li {
 .container {
     margin-left: 280px;
 
+    @include tab{
+        margin-left: 220px;
+    } 
+
     @include sp {
         margin-left: 0;
     }

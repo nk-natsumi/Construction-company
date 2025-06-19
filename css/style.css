@@ -146,6 +146,11 @@ li {
 .container {
   margin-left: 280px;
 }
+@media screen and (max-width: 1024px) {
+  .container {
+    margin-left: 220px;
+  }
+}
 @media screen and (max-width: 767px) {
   .container {
     margin-left: 0;
@@ -470,10 +475,15 @@ li {
   width: 100%;
   height: 100%;
   background-color: #fff;
-  padding: 74px 40px 0px;
+  padding: 74px 2.7777777778% 0px;
   position: fixed;
   top: 0;
   overflow-y: auto;
+}
+@media screen and (max-width: 1024px) {
+  .header {
+    max-width: 220px;
+  }
 }
 @media screen and (max-width: 767px) {
   .header {
@@ -1459,20 +1469,25 @@ li {
   text-align: center;
   position: absolute;
   top: 6.1043285239%;
-  right: 16.875%;
+  left: calc(50vw + 31.5972222222%);
   color: #FFF;
   cursor: pointer;
 }
+@media (min-width: 1440px) {
+  .modal__overlay::before {
+    left: calc(50vw + 445px);
+  }
+}
 @media screen and (max-width: 1024px) {
   .modal__overlay::before {
-    right: 12.037037037%;
+    left: calc(50vw + 34.66796875%);
   }
 }
 @media screen and (max-width: 767px) {
   .modal__overlay::before {
     font-size: 2.25rem;
     top: 3px;
-    right: 3px;
+    left: 92%;
   }
 }
 
@@ -1741,7 +1756,7 @@ li {
   height: 20px;
   mask: url(../img/mail_icon.svg) no-repeat center/cover;
   background-color: #000;
-  transition: all 0.3s;
+  /* transition: all 0.3s; */
 }
 .contact__btn a:hover::before {
   background-color: #fff;
@@ -1858,7 +1873,7 @@ li {
   flex-wrap: wrap;
   row-gap: 40px;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 767px) {
   .footer__nav .flex-box-center {
     margin-bottom: 0;
     flex-direction: column;
@@ -1871,7 +1886,7 @@ li {
 .footer__nav .flex-box-center a:hover {
   opacity: 0.4;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 767px) {
   .footer__nav .flex-box-center a {
     margin-top: 32px;
   }
