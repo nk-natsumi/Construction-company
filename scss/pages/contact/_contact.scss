@@ -233,10 +233,10 @@
         cursor: pointer;
         transition: 0.3s;
 
-        &:disabled{
+        &:disabled {
             pointer-events: none;
             opacity: 1;
-            
+
         }
 
         &:hover {
@@ -263,6 +263,7 @@
 
 .form__tel {
     width: calc((260/880)*100%);
+    font-weight: bold;
 
     @include tab {
         width: 100%;
@@ -287,6 +288,8 @@
     .tel-open {
         margin-top: 14px;
         font-size: 0.75rem;
+
+        
     }
 }
 
