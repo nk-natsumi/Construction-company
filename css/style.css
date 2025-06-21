@@ -1705,6 +1705,7 @@ li {
 .contact__small {
   font-size: 0.75rem;
   margin-top: 8px;
+  font-weight: bold;
 }
 @media screen and (max-width: 1024px) {
   .contact__small {

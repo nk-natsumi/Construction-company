@@ -142,6 +142,7 @@
 .contact__small {
     font-size: 0.75rem;
     margin-top: 8px;
+    font-weight: bold;
 
     @include tab {
         margin-top: 0;
