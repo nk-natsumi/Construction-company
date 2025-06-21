@@ -141,7 +141,7 @@ $(document).ready(function () {
         openClass: 'is-open',
         disableScroll: true,
         onShow: (modal) => {
-            const container = modal.querySelector('.modal__container');
+            const container = modal.querySelector('.modal__inner');
             if (container) container.scrollTop = 0;
         }
     });
