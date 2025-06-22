@@ -28,10 +28,11 @@
 }
 
 .news__item {
+    border-bottom: 1px solid $line-color;
+
     a {
         padding: 32px 0;
         display: block;
-        border-bottom: 1px solid $line-color;
         position: relative;
         transition: 0.3s;
 
@@ -181,7 +182,7 @@
         color: #FFF;
         cursor: pointer;
 
-        @include sp{
+        @include sp {
             font-size: 30px;
             width: 20px;
             height: 20px;
