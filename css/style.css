@@ -608,7 +608,7 @@ li {
   .header__sub-menu {
     margin-top: 32px;
     padding: 0;
-    display: block;
+    display: block !important;
     font-size: 1rem;
     border-bottom: none;
   }
