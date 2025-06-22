@@ -34,9 +34,9 @@ li {
 .container {
     margin-left: 280px;
 
-    @include tab{
+    @include tab {
         margin-left: 220px;
-    } 
+    }
 
     @include sp {
         margin-left: 0;
@@ -49,10 +49,13 @@ li {
     padding-right: 20px;
     margin: 0 auto 0 0;
 
+    @include tab {
+        box-sizing: border-box;
+    }
+
     @include sp {
         padding: 0 20px;
         margin: 0;
-        box-sizing: border-box;
     }
 }
 
@@ -220,9 +223,12 @@ li {
     padding-right: 20px;
     box-sizing: content-box;
 
+    @include tab {
+        box-sizing: border-box;
+    }
+
     @include sp {
         padding: 0 20px;
-        box-sizing: border-box;
     }
 }
 

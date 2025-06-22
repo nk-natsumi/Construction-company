@@ -35,14 +35,32 @@ $(document).ready(function () {
     });
 
 
-    $('.header__link-group').hover(
-        function () {
-            $(this).find('.header__sub-menu').stop(true, true).slideDown(600);
-        },
-        function () {
-            $(this).find('.header__sub-menu').stop(true, true).slideUp(600);
+    function setHeaderHover() {
+        const isPC = window.innerWidth > 768;
+
+        $('.header__link-group').off('mouseenter mouseleave');
+
+        if (isPC) {
+            $('.header__link-group').hover(
+                function () {
+                    $(this).find('.header__sub-menu').stop(true, true).slideDown(600);
+                },
+                function () {
+                    $(this).find('.header__sub-menu').stop(true, true).slideUp(600);
+                }
+            );
         }
-    );
+    }
+
+    // 初回実行
+    $(document).ready(function () {
+        setHeaderHover();
+    });
+
+    // 画面サイズが変わったときも再判定（レスポンシブ対応）
+    $(window).resize(function () {
+        setHeaderHover();
+    });
 
 
     // ロード時のハッシュスクロール
